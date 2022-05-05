@@ -1,0 +1,4 @@
+LANGUAGE,"English","German"
+STR_HELLO, WTF, Guten Tag
+STR_SOUND, sounds\helloENG.ogg, sounds\helloGER.ogg
+NUM_SOUND, 1, 2

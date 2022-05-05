@@ -1,0 +1,515 @@
+------------------------------------------------------------------
+ReadMe text file
+Created by: DreadedEntity
+------------------------------------------------------------------
+
+/* #Kateva
+$[
+	1.063,
+	["TreeTest",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1500,"",[2,"",["-11 * GUI_GRID_W + GUI_GRID_X","-0.5 * GUI_GRID_H + GUI_GRID_Y","13 * GUI_GRID_W","27 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[2,"test",["-11 * GUI_GRID_W + GUI_GRID_X","-1.5 * GUI_GRID_H + GUI_GRID_Y","13 * GUI_GRID_W","1 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Zexasy
+$[
+	1.063,
+	["TreeTest",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1500,"",[1,"",["0.00626098 * safezoneW + safezoneX","0.0579797 * safezoneH + safezoneY","0.207052 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0.00626098 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.207052 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close Dialog",["0.00626098 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.207052 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Gibype
+$[
+	1.063,
+	["TreeTest",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1000,"",[1,"test",["0.00626098 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.207052 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1500,"",[1,"",["0.00626098 * safezoneW + safezoneX","0.0579797 * safezoneH + safezoneY","0.207052 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.165532 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.0477812 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.00626098 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.11775 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title",["0.388511 * safezoneW + safezoneX","0.193986 * safezoneH + safezoneY","0.175198 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body",["0.388511 * safezoneW + safezoneX","0.261989 * safezoneH + safezoneY","0.175198 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.388511 * safezoneW + safezoneX","0.227987 * safezoneH + safezoneY","0.175198 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.388511 * safezoneW + safezoneX","0.295991 * safezoneH + safezoneY","0.175198 * safezoneW","0.153007 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.484073 * safezoneW + safezoneX","0.448998 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.388511 * safezoneW + safezoneX","0.448998 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Kicazy
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1000,"",[1,"test",["0.00626098 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.207052 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1500,"",[1,"",["0.00626098 * safezoneW + safezoneX","0.0579797 * safezoneH + safezoneY","0.987478 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.945958 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.0477812 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.00626098 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.11775 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title",["0.34073 * safezoneW + safezoneX","0.193986 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body",["0.34073 * safezoneW + safezoneX","0.261989 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.340731 * safezoneW + safezoneX","0.227987 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.34073 * safezoneW + safezoneX","0.295991 * safezoneH + safezoneY","0.27076 * safezoneW","0.153007 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.340729 * safezoneW + safezoneX","0.670008 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.531854 * safezoneW + safezoneX","0.670008 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"",[1,"Sound",["0.34073 * safezoneW + safezoneX","0.448998 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"",[1,"Code",["0.340729 * safezoneW + safezoneX","0.517001 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"",[1,"New Path",["0.340729 * safezoneW + safezoneX","0.585004 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1402,"",[1,"",["0.340729 * safezoneW + safezoneX","0.482999 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1403,"",[1,"",["0.340729 * safezoneW + safezoneX","0.551002 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1404,"",[1,"",["0.340729 * safezoneW + safezoneX","0.619005 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Kuzuna
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1500,"",[1,"",["0.00626098 * safezoneW + safezoneX","0.0579797 * safezoneH + safezoneY","0.987478 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0.00626098 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.987478 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.945958 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.0477812 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.00626098 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.11775 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title",["0.34073 * safezoneW + safezoneX","0.193986 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body",["0.34073 * safezoneW + safezoneX","0.261989 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"",[1,"Sound",["0.34073 * safezoneW + safezoneX","0.448998 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"",[1,"Code",["0.340729 * safezoneW + safezoneX","0.517001 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"",[1,"New Path",["0.340729 * safezoneW + safezoneX","0.585004 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.340731 * safezoneW + safezoneX","0.227987 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.34073 * safezoneW + safezoneX","0.295991 * safezoneH + safezoneY","0.27076 * safezoneW","0.153007 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1402,"",[1,"",["0.340729 * safezoneW + safezoneX","0.482999 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1403,"",[1,"",["0.340729 * safezoneW + safezoneX","0.551002 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1404,"",[1,"",["0.340729 * safezoneW + safezoneX","0.619005 * safezoneH + safezoneY","0.27076 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.340729 * safezoneW + safezoneX","0.670008 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.531854 * safezoneW + safezoneX","0.670008 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"",[1,"Move Up",["0.22924 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"",[1,"Move Down",["0.340729 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Xanequ
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1500,"",[1,"",["0.00626098 * safezoneW + safezoneX","0.0579797 * safezoneH + safezoneY","0.987478 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0.00626098 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.987478 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.945958 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.0477812 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.00626098 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.11775 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"",[1,"Move Up",["0.22924 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"",[1,"Move Down",["0.340729 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title:",["0.237567 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body:",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"",[1,"Body Sound:",["0.237567 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"",[1,"Code:",["0.237567 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"",[1,"New Path:",["0.237567 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.322858 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.322858 * safezoneW + safezoneX","0.247007 * safezoneH + safezoneY","0.439575 * safezoneW","0.154 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1402,"",[1,"",["0.322858 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1403,"",[1,"",["0.322858 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.439575 * safezoneW","0.056 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1404,"",[1,"",["0.322858 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.526243 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.395027 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"",[1,"Title Sound:",["0.237567 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1007,"",[1,"Sound Length:",["0.5 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0984123 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1405,"",[1,"",["0.322858 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1406,"",[1,"",["0.598412 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.16402 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1008,"",[1,"Body Length:",["0.5 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1407,"",[1,"",["0.585291 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1009,"",[1,"Condition:",["0.237567 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1408,"",[1,"",["0.322858 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Facuzi
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1500,"",[1,"",["0.00626098 * safezoneW + safezoneX","0.0579797 * safezoneH + safezoneY","0.987478 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0.00626098 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.987478 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.945958 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.0477812 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.00626098 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.11775 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"",[1,"Move Up",["0.22924 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"",[1,"Move Down",["0.340729 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+]
+*/
+
+/* #Dupebi
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1010,"",[2,"v.11",["51 * GUI_GRID_W + GUI_GRID_X","-4.5 * GUI_GRID_H + GUI_GRID_Y","2.5 * GUI_GRID_W","1 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1500,"",[1,"",["0.00793856 * safezoneW + safezoneX","0.052 * safezoneH + safezoneY","0.987478 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0.00626098 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.987478 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.945958 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.0477812 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.00626098 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.11775 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"",[1,"Move Up",["0.22924 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"",[1,"Move Down",["0.340729 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title:",["0.237567 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body:",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"",[1,"Body Sound:",["0.237567 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"",[1,"Code:",["0.237567 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"",[1,"New Path:",["0.237567 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.322858 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.322858 * safezoneW + safezoneX","0.247007 * safezoneH + safezoneY","0.439575 * safezoneW","0.154 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1402,"",[1,"",["0.322858 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1403,"",[1,"",["0.322858 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.439575 * safezoneW","0.056 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1404,"",[1,"",["0.322858 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.526243 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.395027 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"",[1,"Title Sound:",["0.237567 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1007,"",[1,"Sound Length:",["0.5 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0984123 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1405,"",[1,"",["0.322858 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1406,"",[1,"",["0.598412 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.16402 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1008,"",[1,"Body Length:",["0.5 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1407,"",[1,"",["0.585291 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1009,"",[1,"Condition:",["0.237567 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1408,"",[1,"",["0.322858 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1011,"",[1,"Load Conversation",["0.316297 * safezoneW + safezoneX","0.444 * safezoneH + safezoneY","0.367406 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1409,"",[1,"",["0.316297 * safezoneW + safezoneX","0.472 * safezoneH + safezoneY","0.367406 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1607,"",[1,"Cancel",["0.388466 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1608,"",[1,"Accept",["0.532804 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Kajyba
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1010,"",[1,"v.13",["0.959257 * safezoneW + safezoneX","0.962 * safezoneH + safezoneY","0.0328041 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1500,"",[1,"",["0.00793856 * safezoneW + safezoneX","0.052 * safezoneH + safezoneY","0.987478 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0.00793856 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.987478 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.945958 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.0477812 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.00626098 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.11775 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"",[1,"Move Up",["0.22924 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"",[1,"Move Down",["0.340729 * safezoneW + safezoneX","0.94202 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title:",["0.237567 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body:",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"",[1,"Body Sound:",["0.237567 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"",[1,"Code:",["0.237567 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"",[1,"New Path:",["0.237567 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.322858 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.322858 * safezoneW + safezoneX","0.247007 * safezoneH + safezoneY","0.439575 * safezoneW","0.154 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1402,"",[1,"",["0.322858 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1403,"",[1,"",["0.322858 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.439575 * safezoneW","0.056 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1404,"",[1,"",["0.322858 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.526243 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.395027 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"",[1,"Title Sound:",["0.237567 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1007,"",[1,"Sound Length:",["0.5 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0984123 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1405,"",[1,"",["0.322858 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1406,"",[1,"",["0.598412 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.16402 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1008,"",[1,"Body Length:",["0.5 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1407,"",[1,"",["0.585291 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1009,"",[1,"Condition:",["0.237567 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1408,"",[1,"",["0.322858 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1011,"",[1,"Load Conversation",["0.316297 * safezoneW + safezoneX","0.444 * safezoneH + safezoneY","0.367406 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1409,"",[1,"",["0.316297 * safezoneW + safezoneX","0.472 * safezoneH + safezoneY","0.367406 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1607,"",[1,"Cancel",["0.388466 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1608,"",[1,"Accept",["0.532804 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1609,"",[2,"Load",["47.5 * GUI_GRID_W + GUI_GRID_X","28 * GUI_GRID_H + GUI_GRID_Y","7 * GUI_GRID_W","1.5 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1610,"",[1,"Delete Topic",["0.231006 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Cytedu
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1010,"",[1,"v.13",["0.959257 * safezoneW + safezoneX","0.962 * safezoneH + safezoneY","0.0328041 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1500,"",[1,"",["0.00793856 * safezoneW + safezoneX","0.052 * safezoneH + safezoneY","0.987478 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0.00793856 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.987478 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.945958 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.0477812 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.00793856 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.119473 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1610,"",[1,"Delete Topic",["0.231006 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"",[1,"Move Up",["0.454074 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"",[1,"Move Down",["0.34254 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title:",["0.237567 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body:",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"",[1,"Body Sound:",["0.237567 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"",[1,"Code:",["0.237567 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"",[1,"New Path:",["0.237567 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.322858 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.322858 * safezoneW + safezoneX","0.247007 * safezoneH + safezoneY","0.439575 * safezoneW","0.154 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1402,"",[1,"",["0.322858 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1403,"",[1,"",["0.322858 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.439575 * safezoneW","0.056 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1404,"",[1,"",["0.322858 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.526243 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.395027 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"",[1,"Title Sound:",["0.237567 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1007,"",[1,"Sound Length:",["0.5 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0984123 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1405,"",[1,"",["0.322858 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1406,"",[1,"",["0.598412 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.16402 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1008,"",[1,"Body Length:",["0.5 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1407,"",[1,"",["0.585291 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1009,"",[1,"Condition:",["0.237567 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1408,"",[1,"",["0.322858 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1011,"",[1,"Load Conversation",["0.493439 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.268994 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1409,"",[1,"",["0.493439 * safezoneW + safezoneX","0.276 * safezoneH + safezoneY","0.268994 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1607,"",[1,"Cancel",["0.493439 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1608,"",[1,"Accept",["0.683703 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1012,"",[1,"Known Conversations",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.249311 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1501,"",[1,"",["0.237567 * safezoneW + safezoneX","0.276 * safezoneH + safezoneY","0.249311 * safezoneW","0.42 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Zepywu
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1010,"",[1,"v.14",["0.959257 * safezoneW + safezoneX","0.962 * safezoneH + safezoneY","0.0328041 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1500,"",[1,"",["0.00793856 * safezoneW + safezoneX","0.052 * safezoneH + safezoneY","0.987478 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0.00793856 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.987478 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.945958 * safezoneW + safezoneX","0.0239781 * safezoneH + safezoneY","0.0477812 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.00793856 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.119473 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1610,"",[1,"Delete Topic",["0.231006 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"",[1,"Move Up",["0.454074 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"",[1,"Move Down",["0.34254 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1609,"",[2,"Load",["47.5 * GUI_GRID_W + GUI_GRID_X","28 * GUI_GRID_H + GUI_GRID_Y","7 * GUI_GRID_W","1.5 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title:",["0.237567 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body:",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"",[1,"Body Sound:",["0.237567 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"",[1,"Code:",["0.237567 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"",[1,"New Path:",["0.237567 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.322858 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.322858 * safezoneW + safezoneX","0.247007 * safezoneH + safezoneY","0.439575 * safezoneW","0.154 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1402,"",[1,"",["0.322858 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1403,"",[1,"",["0.322858 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.439575 * safezoneW","0.056 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1404,"",[1,"",["0.322858 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.526243 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.395027 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"",[1,"Title Sound:",["0.237567 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1007,"",[1,"Sound Length:",["0.5 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0984123 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1405,"",[1,"",["0.322858 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1406,"",[1,"",["0.598412 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.16402 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1008,"",[1,"Body Length:",["0.5 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1407,"",[1,"",["0.585291 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1009,"",[1,"Condition:",["0.237567 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1408,"",[1,"",["0.322858 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1011,"",[1,"Load Conversation",["0.493439 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.268994 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1409,"",[1,"",["0.493439 * safezoneW + safezoneX","0.276 * safezoneH + safezoneY","0.268994 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1607,"",[1,"Cancel",["0.493439 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1608,"",[1,"Accept",["0.683703 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1501,"",[1,"Load",["0.90021 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1012,"",[1,"Known Conversations",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.249311 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1501,"",[1,"",["0.237567 * safezoneW + safezoneX","0.276 * safezoneH + safezoneY","0.249311 * safezoneW","0.42 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1611,"",[1,"Delete",["0.585291 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Mihysi
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1010,"",[1,"v15",["0.971239 * safezoneW + safezoneX","0.972185 * safezoneH + safezoneY","0.0328041 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1500,"",[1,"",["0.00793856 * safezoneW + safezoneX","0.052 * safezoneH + safezoneY","0.987478 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0.00793856 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.987478 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.967496 * safezoneW + safezoneX","0.0159797 * safezoneH + safezoneY","0.0262433 * safezoneW","0.042 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.00793856 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.119473 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1610,"",[1,"Delete Topic",["0.231006 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"",[1,"Move Up",["0.454074 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"",[1,"Move Down",["0.34254 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1609,"",[1,"Load",["0.90021 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title:",["0.237567 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body:",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"",[1,"Body Sound:",["0.237567 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"",[1,"Code:",["0.237567 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"",[1,"New Path:",["0.237567 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.322858 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.322858 * safezoneW + safezoneX","0.247007 * safezoneH + safezoneY","0.439575 * safezoneW","0.154 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1402,"",[1,"",["0.322858 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1403,"",[1,"",["0.322858 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.439575 * safezoneW","0.056 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1404,"",[1,"",["0.322858 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.526243 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.395027 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"",[1,"Title Sound:",["0.237567 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1007,"",[1,"Sound Length:",["0.5 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0984123 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1405,"",[1,"",["0.322858 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1406,"",[1,"",["0.598412 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.16402 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1008,"",[1,"Body Length:",["0.5 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1407,"",[1,"",["0.585291 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1009,"",[1,"Condition:",["0.237567 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1408,"",[1,"",["0.322858 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1011,"",[1,"Load Conversation",["0.493439 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.268994 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1409,"",[1,"",["0.493439 * safezoneW + safezoneX","0.276 * safezoneH + safezoneY","0.268994 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1607,"",[1,"Cancel",["0.493439 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1608,"",[1,"Accept",["0.683703 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1501,"",[1,"",["0.237567 * safezoneW + safezoneX","0.276 * safezoneH + safezoneY","0.249311 * safezoneW","0.42 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1012,"",[1,"Known Conversations",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.249311 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1611,"",[1,"Delete",["0.585291 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1013,"",[1,"Confirmation Window",["0.34254 * safezoneW + safezoneX","0.262 * safezoneH + safezoneY","0.314919 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1014,"",[1,"Message Window",["0.34254 * safezoneW + safezoneX","0.29 * safezoneH + safezoneY","0.314919 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1612,"",[1,"Button_NO",["0.34254 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1613,"",[1,"Button_Middle",["0.454074 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1614,"",[1,"Button_YES",["0.565608 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Sijocy
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1010,"",[1,"v16",["0.97427 * safezoneW + safezoneX","0.970333 * safezoneH + safezoneY","0.0328041 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1500,"",[1,"",["0.00793856 * safezoneW + safezoneX","0.052 * safezoneH + safezoneY","0.987478 * safezoneW","0.86704 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0.00793856 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.987478 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.967496 * safezoneW + safezoneX","0.0159797 * safezoneH + safezoneY","0.0262433 * safezoneW","0.042 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.05375 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.119375 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1610,"",[1,"Delete Topic",["0.185 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"",[1,"Move Up",["0.31625 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"",[1,"Move Down",["0.250625 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1609,"",[1,"Load",["0.90021 * safezoneW + safezoneX","0.934 * safezoneH + safezoneY","0.0955624 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title:",["0.237567 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body:",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"",[1,"Body Sound:",["0.237567 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"",[1,"Code:",["0.237567 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"",[1,"New Path:",["0.237567 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.322858 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.322858 * safezoneW + safezoneX","0.247007 * safezoneH + safezoneY","0.439575 * safezoneW","0.154 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1402,"",[1,"",["0.322858 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1403,"",[1,"",["0.322858 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.439575 * safezoneW","0.056 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1404,"",[1,"",["0.322858 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.526243 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.395027 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"",[1,"Title Sound:",["0.237567 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1007,"",[1,"Sound Length:",["0.5 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0984123 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1405,"",[1,"",["0.322858 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1406,"",[1,"",["0.598412 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.16402 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1008,"",[1,"Body Length:",["0.5 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1407,"",[1,"",["0.585291 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1009,"",[1,"Condition:",["0.237567 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1408,"",[1,"",["0.322858 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1011,"",[1,"Load Conversation",["0.493439 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.268994 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1409,"",[1,"",["0.493439 * safezoneW + safezoneX","0.276 * safezoneH + safezoneY","0.268994 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1607,"",[1,"Cancel",["0.493439 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1608,"",[1,"Accept",["0.683703 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1501,"",[1,"",["0.237567 * safezoneW + safezoneX","0.276 * safezoneH + safezoneY","0.249311 * safezoneW","0.42 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1012,"",[1,"Known Conversations",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.249311 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1611,"",[1,"Delete",["0.585291 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1013,"",[1,"Confirmation Window",["0.34254 * safezoneW + safezoneX","0.262 * safezoneH + safezoneY","0.314919 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1014,"",[1,"Message Window",["0.34254 * safezoneW + safezoneX","0.29 * safezoneH + safezoneY","0.314919 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1612,"",[1,"Button_NO",["0.34254 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1613,"",[1,"Button_Middle",["0.454074 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1614,"",[1,"Button_YES",["0.565608 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+/* #Qoxexi
+$[
+	1.063,
+	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1010,"",[1,"v16",["0.97427 * safezoneW + safezoneX","0.970333 * safezoneH + safezoneY","0.0328041 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1500,"",[1,"",["0.00125004 * safezoneW + safezoneX","0.0380001 * safezoneH + safezoneY","0.9975 * safezoneW","0.952 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"test",["0 * safezoneW + safezoneX","0 * safezoneH + safezoneY","1 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"",[1,"Close",["0.9725 * safezoneW + safezoneX","-0.00399999 * safezoneH + safezoneY","0.0262433 * safezoneW","0.042 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"",[1,"New Topic",["0.165312 * safezoneW + safezoneX","0.682 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"",[1,"Edit Topic",["0.165312 * safezoneW + safezoneX","0.696 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1610,"",[1,"Delete Topic",["0.165312 * safezoneW + safezoneX","0.71 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"",[1,"Move Up",["0.165312 * safezoneW + safezoneX","0.738 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"",[1,"Move Down",["0.165312 * safezoneW + safezoneX","0.724 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"",[1,"Title:",["0.237567 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"",[1,"Body:",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"",[1,"Body Sound:",["0.237567 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"",[1,"Code:",["0.237567 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"",[1,"New Path:",["0.237567 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1400,"",[1,"",["0.322858 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1401,"",[1,"",["0.322858 * safezoneW + safezoneX","0.247007 * safezoneH + safezoneY","0.439575 * safezoneW","0.154 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1402,"",[1,"",["0.322858 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1403,"",[1,"",["0.322858 * safezoneW + safezoneX","0.43 * safezoneH + safezoneY","0.439575 * safezoneW","0.056 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1404,"",[1,"",["0.322858 * safezoneW + safezoneX","0.486 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"",[1,"Accept",["0.526243 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"",[1,"Cancel",["0.395027 * safezoneW + safezoneX","0.542 * safezoneH + safezoneY","0.0796353 * safezoneW","0.0340016 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"",[1,"Title Sound:",["0.237567 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1007,"",[1,"Sound Length:",["0.5 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.0984123 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1405,"",[1,"",["0.322858 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1406,"",[1,"",["0.598412 * safezoneW + safezoneX","0.22 * safezoneH + safezoneY","0.16402 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1008,"",[1,"Body Length:",["0.5 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1407,"",[1,"",["0.585291 * safezoneW + safezoneX","0.402 * safezoneH + safezoneY","0.177142 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1009,"",[1,"Condition:",["0.237567 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.0852906 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1408,"",[1,"",["0.322858 * safezoneW + safezoneX","0.514 * safezoneH + safezoneY","0.439575 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1011,"",[1,"Load Conversation",["0.493439 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.268994 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1409,"",[1,"",["0.493439 * safezoneW + safezoneX","0.276 * safezoneH + safezoneY","0.268994 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1607,"",[1,"Cancel",["0.493439 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1608,"",[1,"Accept",["0.683703 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1501,"",[1,"",["0.237567 * safezoneW + safezoneX","0.276 * safezoneH + safezoneY","0.249311 * safezoneW","0.42 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1012,"",[1,"Known Conversations",["0.237567 * safezoneW + safezoneX","0.248 * safezoneH + safezoneY","0.249311 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1611,"",[1,"Delete",["0.585291 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0787298 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1013,"",[1,"Confirmation Window",["0.34254 * safezoneW + safezoneX","0.262 * safezoneH + safezoneY","0.314919 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1014,"",[1,"Message Window",["0.34254 * safezoneW + safezoneX","0.29 * safezoneH + safezoneY","0.314919 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1612,"",[1,"Button_NO",["0.34254 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1613,"",[1,"Button_Middle",["0.454074 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1614,"",[1,"Button_YES",["0.565608 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1015,"",[1,"",["0.00125001 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.9975 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1615,"",[1,"File",["0.00125001 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.039375 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1609,"",[1,"Load",["0.040625 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.0459375 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
+
+		////////////////////////////////////////////////////////
+		// GUI EDITOR OUTPUT START (by DreadedEntity, v1.063, #Hogine)
+		////////////////////////////////////////////////////////
+
+		class RscText_1010: RscText
+		{
+			idc = 1010;
+			text = "v16"; //--- ToDo: Localize;
+			x = 0.97427 * safezoneW + safezoneX;
+			y = 0.970333 * safezoneH + safezoneY;
+			w = 0.0328041 * safezoneW;
+			h = 0.028 * safezoneH;
+		};
+		class RscListbox_1500: RscListbox
+		{
+			idc = 1500;
+			x = 0.0 * safezoneW + safezoneX;
+			y = 0.042 * safezoneH + safezoneY;
+			w = 1 * safezoneW;
+			h = 0.958 * safezoneH;
+		};
+		class RscText_1000: RscText
+		{
+			idc = 1000;
+			text = "test"; //--- ToDo: Localize;
+			x = 0 * safezoneW + safezoneX;
+			y = 0 * safezoneH + safezoneY;
+			w = 1 * safezoneW;
+			h = 0.028 * safezoneH;
+		};
+		class RscText_1015: RscText
+		{
+			idc = 1015;
+			x = 0.0 * safezoneW + safezoneX;
+			y = 0.028 * safezoneH + safezoneY;
+			w = 1 * safezoneW;
+			h = 0.014 * safezoneH;
+		};
+		class RscButton_1615: RscButton
+		{
+			idc = 1615;
+			text = "File"; //--- ToDo: Localize;
+			x = 0.0 * safezoneW + safezoneX;
+			y = 0.028 * safezoneH + safezoneY;
+			w = 0.040 * safezoneW;
+			h = 0.014 * safezoneH;
+		};
+		class RscButton_1609: RscButton
+		{
+			idc = 1609;
+			text = "Load"; //--- ToDo: Localize;
+			x = 0.040 * safezoneW + safezoneX;
+			y = 0.028 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
+			h = 0.014 * safezoneH;
+		};
+		////////////////////////////////////////////////////////
+		// GUI EDITOR OUTPUT END
+		////////////////////////////////////////////////////////

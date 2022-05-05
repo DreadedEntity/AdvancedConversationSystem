@@ -1,0 +1,15 @@
+------------------------------------------------------------------
+ReadMe text file
+Created by: DreadedEntity
+------------------------------------------------------------------
+
+Complete "Move Up" function - Low Priority
+Complete "Move Down" function - Low Priority
+
+Create right click options - High Priority
+
+Create Window Menu - Medium Priority
+
+Hotkey system - High Priority
+
+Create Tutorial

@@ -1,0 +1,96 @@
+////////////////////////////////////////
+// Description file for Armed Assault //
+//     Created by: DreadedEntity      //
+////////////////////////////////////////
+
+author = DreadedEntity;
+
+#include "ACS\resources\BaseClasses.hpp"
+#include "ACS\resources\AdvancedConversationSystem.hpp"
+#include "ACS\resources\ACS_Editor.hpp"
+
+class CfgFunctions
+{
+	#include "ACS\resources\ACS_functions.txt"
+	#include "ACS\resources\ACSCE_functions.txt"
+};
+
+#define TESTCLASS(WTF,IS,THIS) \
+class TEST##WTF## \
+{ \
+	value1 = #IS; \
+	value2 = #THIS; \
+}
+
+TESTCLASS(HOWDOESTHISWORK,mystring1,mystring2);
+
+class CfgSounds
+{
+	sounds[] = {};
+	class DreadedEntity
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "DreadedEntity";
+		// filename, volume, pitch
+		sound[] = {"sounds\newsound.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text 
+		titles[] = {};
+	};
+	class helloENG
+	{
+		name = "helloENG";
+		sound[] = {"sounds\helloENG.ogg", 1, 1};
+		titles[] = {};
+	};
+	class helloGER
+	{
+		name = "helloGER";
+		sound[] = {"sounds\helloGER.ogg", 1, 1};
+		titles[] = {};
+	};
+	class hey
+	{
+		name = "hey";
+		sound[] = {"sounds\hey.ogg", 1, 1};
+		titles[] = {};
+	};
+	class song1
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "bleh";
+		// filename, volume, pitch
+		sound[] = {"sounds\space_battle.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text 
+		titles[] = {};
+	};
+	class player1
+	{
+		name = "player1";
+		sound[] = {"sounds\player1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class man1
+	{
+		name = "man1";
+		sound[] = {"sounds\man1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class man2
+	{
+		name = "man2";
+		sound[] = {"sounds\man2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class man3
+	{
+		name = "man3";
+		sound[] = {"sounds\man3.ogg", 1, 1};
+		titles[] = {};
+	};
+	class man4
+	{
+		name = "man4";
+		sound[] = {"sounds\man4.ogg", 1, 1};
+		titles[] = {};
+	};
+};
