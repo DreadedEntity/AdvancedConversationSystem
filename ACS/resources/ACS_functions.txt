@@ -1,18 +1,16 @@
 class ACS
+{
+	class Functions
 	{
-		class Functions
-		{
-			file = "ACS\scripts\ACS";
-			class user_enableTalk {};
-			class system_select {};
-			class system_openDialog {};
-			class system_addTopics {};
-			class system_execute {};
-			class system_removeBrackets {};
-			class system_chooseTopic {};
-			class user_NPCSpeakTo {};
-			class user_registerConversation {};
-			class user_deregisterConversation {};
-			class user_allowSpeech {};
-		};
+		file = "ACS\scripts\ACS";
+		class user_enableTalk {};
+		class system_select {};
+		class system_openDialog {};
+		class system_addTopics {};
+		class system_execute {};
+		class user_NPCSpeakTo {};
+		class user_registerConversation {};
+		class user_deregisterConversation {};
+		class user_allowSpeech {};
 	};
+};

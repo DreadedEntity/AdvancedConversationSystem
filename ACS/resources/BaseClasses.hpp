@@ -4,6 +4,7 @@
 #define CT_EDIT             2
 #define CT_LISTBOX          5
 #define CT_TREE             12
+#define CT_STRUCTURED_TEXT  13
 
 // Static styles
 #define ST_LEFT           0x00
@@ -28,7 +29,7 @@ class RscListbox
 	idc = -1;
 	type = CT_LISTBOX;
 	style = ST_MULTI;
-	sizeEx = 0.03000
+	sizeEx = 0.03000;
 	shadow = 2;
 	font = FT_EMONO;
 	rowHeight = 0.03;

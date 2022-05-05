@@ -3,9 +3,9 @@
 //    Created by: DreadedEntity    //
 /////////////////////////////////////
 
-/*
-_data = call compile (lbData [1500, _this select 1]);
 
+//_data = call compile (lbData [1500, _this select 1]);
+/*
 	_data select 0 -- Current path
 	_data select 1 -- Title Text
 	_data select 2 -- Title Sound
@@ -65,8 +65,6 @@ _mouseUpEH = (findDisplay 46) displayAddEventHandler ["KeyUp",
 //ACS_UIEH = [_mouseDownEH, _mouseUpEH];
 
 _data = _this;
-ACS_SPEAKER doWatch ACS_CALLER;
-ACS_CALLER doWatch ACS_SPEAKER;
 
 _titleText = call compile (_data select 1);
 _titleSound = call compile (_data select 2);
@@ -80,23 +78,13 @@ if (isNil "_titleSoundLength") then
 	_titleSoundLength = [];
 };
 
-systemChat str _titleText;
-systemChat str _titleSound;
-systemChat str _titleSoundLength;
-
-_count = 0;
-if (!isNil "_titleText") then
+_count = (count _titleText) - 1;
 {
-	_count = (count _titleText) - 1;
+	if (_x > _count) then
 	{
-		if (_x > _count) then
-		{
-			_count = _x;
-		};
-	} forEach [count _titleSound, count _titleSoundLength];
-};
-
-systemChat str _count;
+		_count = _x;
+	};
+} forEach [count _titleSound, count _titleSoundLength];
 
 if (_count > 0) then
 {
@@ -115,10 +103,10 @@ if (_count > 0) then
 	{
 		if ((_titleText select (_i + 1)) find "STR_" == 0) then
 		{
-			ctrlSetText [1001, localize (_titleText select (_i + 1))];
+			ctrlSetText [1001, parseText (localize (_titleText select (_i + 1)))];
 		} else
 		{
-			ctrlSetText [1001, _titleText select (_i + 1)];
+			ctrlSetText [1001, parseText (_titleText select (_i + 1))];
 		};
 		if (((_titleSound) select _i) != "") then
 		{
@@ -238,9 +226,6 @@ if (_count > 0) then
 	ACS_SPEAKER setRandomLip false;
 };
 
-ACS_SPEAKER commandWatch objNull;
-ACS_CALLER commandWatch objNull;
-
 /*
 (findDisplay 46) displayRemoveEventHandler ["KeyDown", _mouseDownEH];
 (findDisplay 46) displayRemoveEventHandler ["KeyUp", _mouseUpEH];
@@ -266,28 +251,14 @@ if ((_data select 8) != "") then
 	_next = _data select 0;
 };
 
-_currentTopic = [((ACS_SPEAKER getVariable "ACS_CONVERSATION") select 0), _next] call ACS_fnc_system_select;
-//systemChat str count (_currentTopic select 1);
-//systemChat str _next;
-if (count (_currentTopic select 1) > 0 /*|| typeName _next == "ARRAY" */) then
+_currentTopic = [((ACS_SPEAKER getVariable "ACS_CONVERSATION") select 0), (_data select 0)] call ACS_fnc_system_select;
+if (count (_currentTopic select 1) == 0) then
 {
-	/*
-	if (typeName _next != "STRING") then
-	{
-		_next call ACS_fnc_system_addTopics;
-	} else
-	{
-		closeDialog 0;
-	};
-	*/
-	_next call ACS_fnc_system_addTopics;
+	closeDialog 0;
 } else
 {
-	//_next call ACS_fnc_system_addTopics;
-	closeDialog 0;
+	_next call ACS_fnc_system_addTopics;
 };
-
-//hintSilent format ["%1\n%2\n%3", _next, _data select 8, _currentTopic];
 
 /*
 _completed = player getVariable ["ACS_completedTopics", []];

@@ -35,34 +35,38 @@ class ACS_Editor
 		{
 			idc = 1000;
 			text = "Conversation Editor"; //--- ToDo: Localize;
-
+			/*
+			x = 0.0 * safezoneW + safezoneX;
+			y = 0.0 * safezoneH + safezoneY;
+			w = 1 * safezoneW;
+			h = 0.028 * safezoneH;
+			*/
+			
 			x = 0 * safezoneW + safezoneX;
 			y = 0 * safezoneH + safezoneY;
 			w = 1 * safezoneW;
 			h = 0.028 * safezoneH;
-			
-			onMouseButtonDown = "ACSCE_MENU_CLICKED = false;call ACSCE_fnc_closeWindowMenu;false call ACSCE_fnc_showRightMouseMenu";
 		};
-		class RscTree_1500: RscTree
+		class RscListbox_1500: RscTree
 		{
 			idc = 1500;
-
+			/*
+			x = 0.0 * safezoneW + safezoneX;
+			y = 0.028 * safezoneH + safezoneY;
+			w = 1 * safezoneW;
+			h = 0.972 * safezoneH;
+			h = 0.90 * safezoneH;
+			*/
+			
 			x = 0.0 * safezoneW + safezoneX;
 			y = 0.048 * safezoneH + safezoneY;
 			w = 1 * safezoneW;
 			h = 0.958 * safezoneH;
-			
-			colorPicture[] = {0,0,0,1};
-			colorPictureSelected[] = {0,0,0,1};
-			colorPictureDisabled[] = {0,0,0,1};
-			colorPictureRight[] = {0,0,0,1};
-			colorPictureRightSelected[] = {0,0,0,1};
-			colorPictureRightDisabled[] = {0,0,0,1};
 
-			onTreeSelChanged = "_this call ACSCE_fnc_treeSelChanged";
-//			onTreeDblClick = "systemChat str (tvValue [1500, _this select 1]);";
+			onTreeSelChanged = "if (ctrlShown ((findDisplay 12345) displayCtrl 1001)) then {ctrlSetText [1400, tvText [1500, tvCurSel 1500]];ctrlSetText [1401, tvData [1500, tvCurSel 1500]];}; systemChat str (tvData [1500, tvCurSel 1500]);";
+			onTreeDblClick = "systemChat str (tvValue [1500, _this select 1]);";
 //			onMouseMoving = "systemChat str _this;";
-			onMouseButtonDown = "_this call ACSCE_fnc_treeMouseDown";
+			onMouseButtonDown = "_this call ACSCE_fnc_handleMouseClick";
 		};
 		class RscButton_1600: RscText
 		{
@@ -75,10 +79,9 @@ class ACS_Editor
 			x = 0.9725 * safezoneW + safezoneX;
 			y = -0.00399999 * safezoneH + safezoneY;
 			w = 0.0262433 * safezoneW;
-			h = 0.035 * safezoneH;
-			//h = 0.0262433 * safezoneH;
+			h = 0.042 * safezoneH;
 			
-			onMouseButtonDown = "ACSCE_MENU_CLICKED = false;call ACSCE_fnc_closeWindowMenu;false call ACSCE_fnc_showRightMouseMenu;call ACSCE_fnc_closeEditor";
+			onMouseButtonDown = "call ACSCE_fnc_closeEditor";
 			colorText[] = {1,1,1,0.75};
 			colorBackground[] = {0,0,0,1};
 //			colorActive[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",1};
@@ -87,9 +90,9 @@ class ACS_Editor
 		class RscText_1015: RscText
 		{
 			idc = 1015;
-			x = 0.0 * safezoneW + safezoneX;
+			x = 0.103 * safezoneW + safezoneX;
 			y = 0.028 * safezoneH + safezoneY;
-			w = 1.0 * safezoneW;
+			w = 0.897 * safezoneW;
 			h = 0.02 * safezoneH;
 			
 			//colorActive[] = {1,1,1,1};
@@ -97,6 +100,35 @@ class ACS_Editor
 			
 			//onLoad = "(_this select 0) ctrlEnable false;";
 		};
+		/*
+		class RscButton_1609: RscButton
+		{
+			idc = 1609;
+			text = "Load"; //--- ToDo: Localize;
+			
+			x = 0.880625 * safezoneW + safezoneX;
+			y = 0.962 * safezoneH + safezoneY;
+			w = 0.0955624 * safezoneW;
+			h = 0.0340016 * safezoneH;
+			
+			
+			x = 0.030 * safezoneW + safezoneX;
+			y = 0.028 * safezoneH + safezoneY;
+			w = 0.034 * safezoneW;
+			h = 0.02 * safezoneH;
+			action = "true call ACSCE_fnc_showLoadControls";
+		};
+		
+		class RscButton_1615: RscButton
+		{
+			idc = 1615;
+			text = "File"; //--- ToDo: Localize;
+			x = 0.0 * safezoneW + safezoneX;
+			y = 0.028 * safezoneH + safezoneY;
+			w = 0.030 * safezoneW;
+			h = 0.02 * safezoneH;
+		};
+		*/
 		////////////////////////////////////////////////////////
 		// END SYSTEM GUI
 		////////////////////////////////////////////////////////
@@ -155,7 +187,7 @@ class ACS_Editor
 			h = 0.02 * safezoneH;
 			sizeEx = 0.02 * safeZoneH;
 			
-			action = "call ACSCE_fnc_moveDown";
+			action = "";
 			onLoad = "(_this select 0) ctrlEnable false";
 		};
 		class RscButton_1610: RscButton
@@ -383,15 +415,6 @@ class ACS_Editor
 			h = 0.0340016 * safezoneH;
 			
 			action = "false call ACSCE_fnc_showEditControls";
-		};
-		class RscText_1016: RscText
-		{
-			idc = 1016;
-			text = "Current Path:"; //--- ToDo: Localize;
-			x = 0.2375 * safezoneW + safezoneX;
-			y = 0.164 * safezoneH + safezoneY;
-			w = 0.525 * safezoneW;
-			h = 0.028 * safezoneH;
 		};
 		////////////////////////////////////////////////////////
 		// END EDIT GUI

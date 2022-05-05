@@ -3,9 +3,6 @@
 //     Created by: DreadedEntity     //
 ///////////////////////////////////////
 
-_controlsArray = [1000, 1500, 1600, 1609];
-_menuBarControlsArray = uiNamespace getVariable ["ACSCE_WINDOW_MENU_CONTROLS", []];
-
 switch (_this) do
 {
 	case true:
@@ -14,7 +11,7 @@ switch (_this) do
 			ctrlEnable [_x, !_this];
 			((findDisplay 12345) displayCtrl _x) ctrlSetFade 0.75;
 			((findDisplay 12345) displayCtrl _x) ctrlCommit 0.25;
-		} forEach (_controlsArray + _menuBarControlsArray);
+		} forEach [1000, 1500, 1600, 1609];
 	};
 	case false:
 	{
@@ -22,7 +19,7 @@ switch (_this) do
 			ctrlEnable [_x, !_this];
 			((findDisplay 12345) displayCtrl _x) ctrlSetFade 0;
 			((findDisplay 12345) displayCtrl _x) ctrlCommit 0.25;
-		} forEach (_controlsArray + _menuBarControlsArray);
+		} forEach [1000, 1500, 1600, 1609];
 	};
 	default
 	{

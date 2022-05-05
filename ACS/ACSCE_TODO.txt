@@ -13,5 +13,3 @@ Create Window Menu - Medium Priority
 Hotkey system - High Priority
 
 Create Tutorial
-
-Re-do UI - HIGH PRIORITY

@@ -18,15 +18,12 @@ private ["_newTopic"];
 if (ctrlText 1400 != "") then
 {
 	_newTopic = tvCurSel 1500;
-	tvAdd [1500, _newTopic, ctrlText ACSCE_TITLE];
+	tvAdd [1500, _newTopic, ctrlText 1400];
 	tvExpand [1500, _newTopic];
-	tvSetData [1500, _newTopic + [(tvCount [1500,_newTopic]) - 1],str [ctrlText ACSCE_TITLE, ctrlText ACSCE_TITLE_SOUND, ctrlText ACSCE_TITLE_LENGTH, ctrlText ACSCE_BODY, ctrlText ACSCE_SOUND, ctrlText ACSCE_BODY_LENGTH, ctrlText ACSCE_CODE, ctrlText ACSCE_PATH, ctrlText ACSCE_CONDITION]];
+	tvSetData [1500, _newTopic + [(tvCount [1500,_newTopic]) - 1],str [ctrlText 1400, ctrlText 1401, ctrlText 1402, ctrlText 1403, ctrlText 1404, ctrlText 1405, ctrlText 1406, ctrlText 1407, ctrlText 1408]];
 	
-	if (ACSCE_DEBUG) then
-	{
-		systemChat str _newTopic;
-		systemChat str (_newTopic + [(tvCount [1500,_newTopic]) - 1]);
-	};
+	systemChat str _newTopic;
+	systemChat str (_newTopic + [(tvCount [1500,_newTopic]) - 1]);
 	
 	ctrlSetText [1000, "Conversation Editor - " + ACSCE_CURRENT_CONVERSATION + "*"];
 	ACSCE_UNSAVED_CHANGES = true;
@@ -34,8 +31,8 @@ if (ctrlText 1400 != "") then
 	false call ACSCE_fnc_showEditControls;
 }else
 {
-	if (ctrlText ACSCE_TITLE == "") then
+	if (ctrlText 1400 == "") then
 	{
-		ctrlSetText [ACSCE_TITLE, "Topic Needed"];
+		ctrlSetText [1400, "Topic Needed"];
 	};
 };

@@ -399,10 +399,7 @@ $[
 	[1014,"",[1,"Message Window",["0.34254 * safezoneW + safezoneX","0.29 * safezoneH + safezoneY","0.314919 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1612,"",[1,"Button_NO",["0.34254 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1613,"",[1,"Button_Middle",["0.454074 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-	[1614,"",[1,"Button_YES",["0.565608 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-	[1015,"",[1,"",["0.00125001 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.9975 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-	[1615,"",[1,"File",["0.00125001 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.039375 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-	[1609,"",[1,"Load",["0.040625 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.0459375 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+	[1614,"",[1,"Button_YES",["0.565608 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
 ]
 */
 
@@ -453,13 +450,12 @@ $[
 	[1614,"",[1,"Button_YES",["0.565608 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1015,"",[1,"",["0.00125001 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.9975 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1615,"",[1,"File",["0.00125001 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.039375 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-	[1609,"",[1,"Load",["0.040625 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.0459375 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-	[1016,"",[1,"Current Path:",["0.2375 * safezoneW + safezoneX","0.164 * safezoneH + safezoneY","0.525 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+	[1609,"",[1,"Load",["0.040625 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.0459375 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
 ]
 */
 
 		////////////////////////////////////////////////////////
-		// GUI EDITOR OUTPUT START (by DreadedEntity, v1.063, #Dijula)
+		// GUI EDITOR OUTPUT START (by DreadedEntity, v1.063, #Hogine)
 		////////////////////////////////////////////////////////
 
 		class RscText_1010: RscText
@@ -471,22 +467,48 @@ $[
 			w = 0.0328041 * safezoneW;
 			h = 0.028 * safezoneH;
 		};
-		class RscEdit_1406: RscEdit
+		class RscListbox_1500: RscListbox
 		{
-			idc = 1406;
-			x = 0.598412 * safezoneW + safezoneX;
-			y = 0.22 * safezoneH + safezoneY;
-			w = 0.16402 * safezoneW;
+			idc = 1500;
+			x = 0.0 * safezoneW + safezoneX;
+			y = 0.042 * safezoneH + safezoneY;
+			w = 1 * safezoneW;
+			h = 0.958 * safezoneH;
+		};
+		class RscText_1000: RscText
+		{
+			idc = 1000;
+			text = "test"; //--- ToDo: Localize;
+			x = 0 * safezoneW + safezoneX;
+			y = 0 * safezoneH + safezoneY;
+			w = 1 * safezoneW;
 			h = 0.028 * safezoneH;
 		};
-		class RscText_1016: RscText
+		class RscText_1015: RscText
 		{
-			idc = 1016;
-			text = "Current Path:"; //--- ToDo: Localize;
-			x = 0.2375 * safezoneW + safezoneX;
-			y = 0.164 * safezoneH + safezoneY;
-			w = 0.525 * safezoneW;
-			h = 0.028 * safezoneH;
+			idc = 1015;
+			x = 0.0 * safezoneW + safezoneX;
+			y = 0.028 * safezoneH + safezoneY;
+			w = 1 * safezoneW;
+			h = 0.014 * safezoneH;
+		};
+		class RscButton_1615: RscButton
+		{
+			idc = 1615;
+			text = "File"; //--- ToDo: Localize;
+			x = 0.0 * safezoneW + safezoneX;
+			y = 0.028 * safezoneH + safezoneY;
+			w = 0.040 * safezoneW;
+			h = 0.014 * safezoneH;
+		};
+		class RscButton_1609: RscButton
+		{
+			idc = 1609;
+			text = "Load"; //--- ToDo: Localize;
+			x = 0.040 * safezoneW + safezoneX;
+			y = 0.028 * safezoneH + safezoneY;
+			w = 0.046 * safezoneW;
+			h = 0.014 * safezoneH;
 		};
 		////////////////////////////////////////////////////////
 		// GUI EDITOR OUTPUT END

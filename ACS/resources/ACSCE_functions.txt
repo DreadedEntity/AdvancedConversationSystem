@@ -32,11 +32,5 @@ class ACSCE
 			class createMenuBarOption {};
 			class cleanup {};
 			class addToMenuBarOption {};
-			class closeWindowMenu {};
-			class fixOutput {};
-			class popFirstElement {};
-			class treeSelChanged {};
-			class treeMouseDown {};
-			class createWindowMenu {};
 		};
 	};

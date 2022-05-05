@@ -3,40 +3,48 @@ class Mission
 {
 	addOns[]=
 	{
+		"map_vr",
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
-		"a3_map_stratis",
-		"A3_Soft_F_MRAP_01"
+		"A3_Air_F_Heli_Light_01",
+		"A3_Soft_F_Car",
+		"A3_Misc_F_Helpers",
+		"A3_Soft_F_MRAP_02",
+		"A3_Modules_F",
+		"A3_Weapons_F_NATO",
+		"a3_weapons_f"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
-		"A3_Soft_F_MRAP_01",
-		"a3_map_stratis"
+		"A3_Air_F_Heli_Light_01",
+		"A3_Weapons_F_NATO",
+		"a3_weapons_f",
+		"map_vr"
 	};
-	randomSeed=12145560;
+	randomSeed=7150163;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
+		briefingName="ACS_Sandbox";
+		overviewText="A blank mission used to test/update the Advanced Conversation System";
+		startWeather=0;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
 		year=2035;
-		month=7;
-		day=6;
-		hour=12;
-		minute=0;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
+		day=28;
+		hour=13;
+		minute=35;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
 	};
 	class Groups
 	{
-		items=6;
+		items=2;
 		class Item0
 		{
 			side="WEST";
@@ -45,14 +53,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3253.2791,5.3443804,5793.2808};
-					azimut=-64.111069;
-					special="NONE";
+					position[]={4000.0581,5,3992.478};
+					azimut=180;
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					leader=1;
 					skill=0.60000002;
+					text="officer";
 				};
 			};
 		};
@@ -64,136 +72,38 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3239.5894,4.9585824,5806.0781};
-					azimut=-396.10083;
+					position[]={4000.001,5,3999.9604};
 					id=1;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
-				};
-			};
-		};
-		class Item2
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3222.2415,4.9016433,5809.584};
-					azimut=68.884399;
-					id=2;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					leader=1;
-					rank="CAPTAIN";
-					skill=0.60000002;
-					text="captain";
-				};
-			};
-		};
-		class Item3
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3126.9841,3.7549007,5882.7227};
-					special="NONE";
-					id=3;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					leader=1;
-					skill=0.60000002;
-					init="this assignAsDriver car;  [this] orderGetIn true; this move [3247,5814,0];";
-				};
-			};
-		};
-		class Item4
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3251.7815,5.3280778,5793.7661};
-					azimut=100.84211;
-					special="NONE";
-					id=4;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					leader=1;
-					skill=0.60000002;
-				};
-			};
-		};
-		class Item5
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3252.998,5.127954,5801.4814};
-					azimut=81.263397;
-					special="NONE";
-					id=5;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					leader=1;
-					skill=0.60000002;
-					text="man";
+					init="this allowDamage false; this switchCamera ""External"";";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=4;
+		items=2;
 		class Item0
 		{
-			position[]={3288.6213,4.6685596,5810.9014};
-			azimut=-143.50546;
-			id=6;
+			position[]={4023.6565,5,3996.873};
+			id=2;
 			side="EMPTY";
-			vehicle="B_MRAP_01_F";
+			vehicle="B_Heli_Light_01_F";
 			skill=0.60000002;
+			text="heli1";
 		};
 		class Item1
 		{
-			position[]={3303.1323,4.6369777,5801.209};
-			azimut=-143.50546;
-			id=7;
+			position[]={4000.0068,5,3998.9341};
+			id=3;
 			side="EMPTY";
-			vehicle="B_MRAP_01_F";
+			vehicle="Weapon_srifle_EBR_F";
 			skill=0.60000002;
-		};
-		class Item2
-		{
-			position[]={3270.4927,5.3863978,5757.4741};
-			azimut=37.945091;
-			id=8;
-			side="EMPTY";
-			vehicle="B_MRAP_01_F";
-			skill=0.60000002;
-		};
-		class Item3
-		{
-			position[]={3127.6758,3.8051245,5888.0049};
-			azimut=60.091801;
-			special="NONE";
-			id=9;
-			side="EMPTY";
-			vehicle="B_MRAP_01_hmg_F";
-			skill=0.60000002;
-			text="car";
+			text="gun";
 		};
 	};
 };
@@ -201,89 +111,86 @@ class Intro
 {
 	addOns[]=
 	{
-		"a3_map_stratis"
+		"map_vr"
 	};
 	addOnsAuto[]=
 	{
-		"a3_map_stratis"
+		"map_vr"
 	};
-	randomSeed=12214715;
+	randomSeed=3973999;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.30000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2035;
-		month=7;
-		day=6;
-		hour=12;
-		minute=0;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
 	};
 };
 class OutroWin
 {
 	addOns[]=
 	{
-		"a3_map_stratis"
+		"map_vr"
 	};
 	addOnsAuto[]=
 	{
-		"a3_map_stratis"
+		"map_vr"
 	};
-	randomSeed=6736883;
+	randomSeed=3539582;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.30000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2035;
-		month=7;
-		day=6;
-		hour=12;
-		minute=0;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
 	};
 };
 class OutroLoose
 {
 	addOns[]=
 	{
-		"a3_map_stratis"
+		"map_vr"
 	};
 	addOnsAuto[]=
 	{
-		"a3_map_stratis"
+		"map_vr"
 	};
-	randomSeed=8415351;
+	randomSeed=8768754;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.30000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2035;
-		month=7;
-		day=6;
-		hour=12;
-		minute=0;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
 	};
 };
