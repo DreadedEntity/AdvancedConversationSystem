@@ -35,13 +35,6 @@ class ACS_Editor
 		{
 			idc = 1000;
 			text = "Conversation Editor"; //--- ToDo: Localize;
-			/*
-			x = 0.0 * safezoneW + safezoneX;
-			y = 0.0 * safezoneH + safezoneY;
-			w = 1 * safezoneW;
-			h = 0.028 * safezoneH;
-			*/
-			
 			x = 0 * safezoneW + safezoneX;
 			y = 0 * safezoneH + safezoneY;
 			w = 1 * safezoneW;
@@ -50,18 +43,16 @@ class ACS_Editor
 		class RscListbox_1500: RscTree
 		{
 			idc = 1500;
-			/*
-			x = 0.0 * safezoneW + safezoneX;
-			y = 0.028 * safezoneH + safezoneY;
-			w = 1 * safezoneW;
-			h = 0.972 * safezoneH;
-			h = 0.90 * safezoneH;
-			*/
-			
 			x = 0.0 * safezoneW + safezoneX;
 			y = 0.048 * safezoneH + safezoneY;
 			w = 1 * safezoneW;
 			h = 0.958 * safezoneH;
+			colorPicture[] = {1,1,1,1};
+			colorPictureSelected[] = {0,0,0,1};
+			colorPictureDisabled[] = {1,1,1,0.25};
+			colorPictureRight[] = {1,1,1,1};
+			colorPictureRightSelected[] = {0,0,0,1};
+			colorPictureRightDisabled[] = {1,1,1,0.25};
 
 			onTreeSelChanged = "if (ctrlShown ((findDisplay 12345) displayCtrl 1001)) then {ctrlSetText [1400, tvText [1500, tvCurSel 1500]];ctrlSetText [1401, tvData [1500, tvCurSel 1500]];}; systemChat str (tvData [1500, tvCurSel 1500]);";
 			onTreeDblClick = "systemChat str (tvValue [1500, _this select 1]);";
@@ -100,35 +91,6 @@ class ACS_Editor
 			
 			//onLoad = "(_this select 0) ctrlEnable false;";
 		};
-		/*
-		class RscButton_1609: RscButton
-		{
-			idc = 1609;
-			text = "Load"; //--- ToDo: Localize;
-			
-			x = 0.880625 * safezoneW + safezoneX;
-			y = 0.962 * safezoneH + safezoneY;
-			w = 0.0955624 * safezoneW;
-			h = 0.0340016 * safezoneH;
-			
-			
-			x = 0.030 * safezoneW + safezoneX;
-			y = 0.028 * safezoneH + safezoneY;
-			w = 0.034 * safezoneW;
-			h = 0.02 * safezoneH;
-			action = "true call ACSCE_fnc_showLoadControls";
-		};
-		
-		class RscButton_1615: RscButton
-		{
-			idc = 1615;
-			text = "File"; //--- ToDo: Localize;
-			x = 0.0 * safezoneW + safezoneX;
-			y = 0.028 * safezoneH + safezoneY;
-			w = 0.030 * safezoneW;
-			h = 0.02 * safezoneH;
-		};
-		*/
 		////////////////////////////////////////////////////////
 		// END SYSTEM GUI
 		////////////////////////////////////////////////////////
