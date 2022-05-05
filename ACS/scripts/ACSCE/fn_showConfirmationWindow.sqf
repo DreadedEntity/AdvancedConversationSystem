@@ -36,12 +36,10 @@ buttonSetAction [1614, _buttonYesCode];
 _newlines = 1;
 _slashFound = false;
 {
-	if (_x == 92) then
-	{
+	if (_x == 92) then {
 		_slashFound = true;
 	};
-	if (_x == 110 && {_slashFound}) then
-	{
+	if (_x == 110 && {_slashFound}) then {
 		_newLines = _newLines + 1;
 		_slashFound = false;
 	};
@@ -67,8 +65,7 @@ _messagePosition set [3, (_messagePosition select 3) * _newlines];
 {
 	ctrlSetText [_x, ""];
 	ctrlEnable [_x, true];
-	if (!isNil {_this select _forEachIndex}) then
-	{
+	if (!isNil {_this select _forEachIndex}) then {
 		ctrlSetText [_x, _this select _forEachIndex];
 	};
 	((findDisplay 12345) displayCtrl _x) ctrlSetFade 0;

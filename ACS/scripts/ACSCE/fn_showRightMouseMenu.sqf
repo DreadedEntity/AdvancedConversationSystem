@@ -11,7 +11,6 @@ ctrlEnable [1500, !_this];
 	((findDisplay 12345) displayCtrl _x) ctrlCommit 0;
 } forEach [1601, 1602, 1605, 1606, 1610];
 
-if (_this) then
-{
+if (_this) then {
 	ctrlEnable [1500, _this];
 };

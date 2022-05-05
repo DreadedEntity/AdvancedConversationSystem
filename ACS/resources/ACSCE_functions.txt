@@ -1,36 +1,34 @@
-class ACSCE
-	{
-		class Functions
-		{
-			file = "ACS\scripts\ACSCE";
-			class openEditor {};
-			class closeEditor	{};
-			class showEditControls {};
-			class showLoadControls {};
-			class showSaveControls {};
-			class saveConversation {};
-			class loadConversation {};
-			class addTopic {};
-			class handleButtons {};
-			class handleAccept {};
-			class moveUp {};
-			class moveDown {};
-			class handleSaveLoadAccept {};
-			class handleDelete {};
-			class handleSaveLoadMiddleButton {};
-			class saveTo {};
-			class getKnownSaves {};
-			class showConfirmationWindow {};
-			class closeConfirmationWindow {};
-			class dimMainControls {};
-			class overwriteConfirm {};
-			class handleMouseClick {};
-			class showRightMouseMenu {};
-			class dialogKeyAction {};
-			class dialogKeyUp {};
-			class getUnusedIDC {};
-			class createMenuBarOption {};
-			class cleanup {};
-			class addToMenuBarOption {};
-		};
+class ACSCE {
+	class Functions {
+		file = "ACS\scripts\ACSCE";
+		class openEditor {};
+		class closeEditor	{};
+		class showEditControls {};
+		class showLoadControls {};
+		class showSaveControls {};
+		class saveConversation {};
+		class loadConversation {};
+		class addTopic {};
+		class handleButtons {};
+		class handleAccept {};
+		class moveUp {};
+		class moveDown {};
+		class handleSaveLoadAccept {};
+		class handleDelete {};
+		class handleSaveLoadMiddleButton {};
+		class saveTo {};
+		class getKnownSaves {};
+		class showConfirmationWindow {};
+		class closeConfirmationWindow {};
+		class dimMainControls {};
+		class overwriteConfirm {};
+		class handleMouseClick {};
+		class showRightMouseMenu {};
+		class dialogKeyAction {};
+		class dialogKeyUp {};
+		class getUnusedIDC {};
+		class createMenuBarOption {};
+		class cleanup {};
+		class addToMenuBarOption {};
 	};
+};

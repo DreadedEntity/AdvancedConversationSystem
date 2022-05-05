@@ -1,7 +1,5 @@
-class ACS
-{
-	class Functions
-	{
+class ACS {
+	class Functions {
 		file = "ACS\scripts\ACS";
 		class user_enableTalk {};
 		class system_select {};

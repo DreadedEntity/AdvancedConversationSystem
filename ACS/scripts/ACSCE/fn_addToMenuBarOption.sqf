@@ -15,13 +15,11 @@ _ctrl ctrlAddEventHandler ["MouseMoving",
 "
 	hint str _this;
 	_thisCtrl = (_this select 0);
-	if (_this select 3) then
-	{
+	if (_this select 3) then {
 		_thisCtrl ctrlSetTextColor [0,0,0,0.90];
 		_thisCtrl ctrlSetBackgroundColor [1,1,1,0.90];
 
-	} else
-	{
+	} else {
 		_thisCtrl ctrlSetTextColor [1,1,1,0.90];
 		_thisCtrl ctrlSetBackgroundColor [0,0,0,0.90];
 	};
@@ -31,10 +29,8 @@ _ctrl ctrlAddEventHandler ["MouseButtonDown", (_this select 2) +
 	ACSCE_MENU_CLICKED = false;
 	_text = ctrlText _thisCtrl;
 	_text = 'ACSCE_' + _text;
-	_menuBar = uiNamespace getVariable ['ACSCE_WINDOW_MENU', []];
-	{
-		_menuOptions = uiNamespace getVariable [_x, []];
-		{
+	_menuBar = uiNamespace getVariable ['ACSCE_WINDOW_MENU', []]; {
+		_menuOptions = uiNamespace getVariable [_x, []]; {
 			_x ctrlEnable false;
 			_x ctrlSetFade 1;
 			_x ctrlCommit 0;

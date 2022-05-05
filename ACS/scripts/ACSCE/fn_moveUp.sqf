@@ -21,14 +21,12 @@ hint str _parent;
 	"false call ACSCE_fnc_dimMainControls;"
 ] call ACSCE_fnc_showConfirmationWindow;
 
-if (count _element > 0) then
-{
+if (count _element > 0) then {
 	_children = tvCount [1500, _parent];
 
 	systemChat str _children;
 	
-	for "_i" from _children to 1 step -1 do
-	{		
+	for "_i" from _children to 1 step -1 do {		
 		tvSetValue [1500, _parent + [_i - 1], _i];
 		
 		tvSetData [1500, _parent + [_i - 1], str [_i,"","",""]];

@@ -102,12 +102,10 @@ _bull = ["Woo",
 [_bull, "Created", ""] call ACSCE_fnc_addToMenuBarOption;
 
 _check = profileNamespace getVariable ["ACSCE_AUTOSAVE", "NULL"];
-if (typeName _check == "ARRAY") then
-{
+if (typeName _check == "ARRAY") then {
 	[[], _check] spawn ACSCE_fnc_loadConversation;
 	ACSCE_CURRENT_CONVERSATION = "ACSCE_AUTOSAVE";
-} else
-{
+} else {
 	ACSCE_CURRENT_CONVERSATION = "Untitled";
 };
 ctrlSetText [1000, "Conversation Editor - ACSCE_AUTOSAVE"];
@@ -119,17 +117,14 @@ _dontShowAgain =
 ";
 _accept = "false call ACSCE_fnc_dimMainControls;";
 
-if ((profileNamespace getVariable ["ACS_BUG_WARNING", 0]) == 0) then
-{
+if ((profileNamespace getVariable ["ACS_BUG_WARNING", 0]) == 0) then {
 	["WARNING", "ACSCE is in the alpha stage, there may be bugs.", "Don't Show", nil, "Okay", _dontShowAgain, "", _accept] call ACSCE_fnc_showConfirmationWindow;
 };
 
-ACSCE_DIALOG displayAddEventHandler ["KeyDown",
-{
+ACSCE_DIALOG displayAddEventHandler ["KeyDown", {
 	private "_return";
 	_return = false;
-	if ((_this select 1) == 1) then
-	{
+	if ((_this select 1) == 1) then {
 		_return = true;
 		call ACSCE_fnc_closeEditor;
 	};

@@ -15,8 +15,7 @@
 
 private ["_newTopic"];
 
-if (ctrlText 1400 != "") then
-{
+if (ctrlText 1400 != "") then {
 	_newTopic = tvCurSel 1500;
 	tvAdd [1500, _newTopic, ctrlText 1400];
 	tvExpand [1500, _newTopic];
@@ -29,10 +28,8 @@ if (ctrlText 1400 != "") then
 	ACSCE_UNSAVED_CHANGES = true;
 	
 	false call ACSCE_fnc_showEditControls;
-}else
-{
-	if (ctrlText 1400 == "") then
-	{
+}else {
+	if (ctrlText 1400 == "") then {
 		ctrlSetText [1400, "Topic Needed"];
 	};
 };

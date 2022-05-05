@@ -8,17 +8,14 @@
 //sounds must also be registered to description.ext, look in mine for examples.
 
 /*
-player addEventHandler ["Fired",
-{
+player addEventHandler ["Fired", {
 	_bullet = (_this select 6);
-	_bullet spawn
-	{
+	_bullet spawn {
 		hint "Shot fired\nBegin Collecting Data";
 		_lineBreak = toString [13, 10];
 		_data = "----------" + _linebreak + "BEGIN SHOT DATA" + _linebreak + "----------" + _linebreak;
 		_startTime = time;
-		while {speed _this > 1} do
-		{
+		while {speed _this > 1} do {
 			_data = _data + (str (velocity _this) + _linebreak);
 		};
 		_endTime = time;
@@ -30,12 +27,10 @@ player addEventHandler ["Fired",
 */
 
 debug = true;
-player addAction ["Open ACSCE",
-{
+player addAction ["Open ACSCE", {
 	[] call ACSCE_fnc_openEditor;
 },[],6, false, true, "", "debug"];
-player addAction ["Test Conversation",
-{
+player addAction ["Test Conversation", {
 	[player, profileNamespace getVariable "ACSCE_AUTOSAVE"] call ACS_fnc_user_registerConversation;
 	_this call ACS_fnc_system_openDialog;
 },[], 6, false, true, "", "debug"];

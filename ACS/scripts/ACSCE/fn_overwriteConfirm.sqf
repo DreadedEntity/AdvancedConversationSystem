@@ -4,14 +4,12 @@
 ///////////////////////////////////////
 
 true call ACSCE_fnc_dimMainControls;
-if ((ctrlText 1409) != "") then
-{
+if ((ctrlText 1409) != "") then {
 	(ctrlText 1409) call ACSCE_fnc_saveTo;
 	"ACSCE_AUTOSAVE" call ACSCE_fnc_saveTo;
 	ACSCE_CURRENT_CONVERSATION = (ctrlText 1409);
 	hint "This thing ran";
-} else
-{
+} else {
 	ACSCE_CURRENT_CONVERSATION call ACSCE_fnc_saveTo;
 	"ACSCE_AUTOSAVE" call ACSCE_fnc_saveTo;
 };

@@ -7,8 +7,7 @@
 _initiator = (_this select 0);
 _speakingTo = (_this select 1);
 
-while {_initiator distance player > 4} do
-{
+while {_initiator distance player > 4} do {
 	_initiator move (getpos player);
 	sleep 1;
 };
@@ -22,17 +21,14 @@ _dirToSpe = [_initiator, _speakingTo] call BIS_fnc_dirTo;
 
 
 //Turn speakingTo to face initiator
-[_dirToInit, _speakingTo] call
-{
+[_dirToInit, _speakingTo] call {
 	_dirToInit = (_this select 0);
 	_speakingTo = (_this select 1);
 	
 	_deltaDir = 0;
-	if (_dirToInit - (direction _speakingTo) > 180) then
-	{
+	if (_dirToInit - (direction _speakingTo) > 180) then {
 		_deltaDir = -1;
-	} else
-	{
+	} else {
 		_deltaDir = 1;
 	};
 	
@@ -44,17 +40,14 @@ _dirToSpe = [_initiator, _speakingTo] call BIS_fnc_dirTo;
 };
 
 //Turn initator to face speakingTo
-[_dirToSpe, _initiator] call
-{
+[_dirToSpe, _initiator] call {
 	_dirToSpe = (_this select 0);
 	_initiator = (_this select 1);
 	
 	_deltaDir = 0;
-	if (_dirToSpe - (direction _initiator) > 180) then
-	{
+	if (_dirToSpe - (direction _initiator) > 180) then {
 		_deltaDir = -1;
-	} else
-	{
+	} else {
 		_deltaDir = 1;
 	};
 	

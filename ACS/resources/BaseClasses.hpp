@@ -23,8 +23,7 @@
 //Base Classes//
 ////////////////
 
-class RscListbox
-{
+class RscListbox {
 	access = 0;
 	idc = -1;
 	type = CT_LISTBOX;
@@ -49,8 +48,7 @@ class RscListbox
 	colorSelect[] = {0,0,0,0.5};
 	soundSelect[] = {"",0,0,0};
 	
-	class ListScrollBar
-	{
+	class ListScrollBar {
 	color[] = {1, 1, 1, 0.6};
 	colorDisabled[] = {};
 	colorActive[] = {1, 1, 1, 1};
@@ -61,8 +59,7 @@ class RscListbox
 	};
 };
 
-class RscText
-{
+class RscText {
     access = 0;
     idc = -1;
     type = CT_STATIC;
@@ -83,8 +80,7 @@ class RscText
    
 };
 
-class RscEdit
-{
+class RscEdit {
 	type = CT_EDIT;
 	style = ST_LEFT;
 	font = "PuristaLight";
@@ -102,8 +98,7 @@ class RscEdit
 	colorBackground[] = {0,0,0,0.5};
 };
 
-class RscButton
-{
+class RscButton {
     
     access = 0;
     type = CT_BUTTON;
@@ -140,8 +135,7 @@ class RscButton
     offsetPressedY = 0;
 };
 
-class RscFrame
-{
+class RscFrame {
     type = CT_STATIC;
     idc = -1;
     style = ST_FRAME;
@@ -153,8 +147,7 @@ class RscFrame
     text = "";
 };
 
-class RscBackground
-{
+class RscBackground {
     type = CT_STATIC;
     idc = -1;
     style = ST_CENTER;
@@ -166,8 +159,7 @@ class RscBackground
     text = "";
 };
 
-class RscTitle
-{
+class RscTitle {
     type = CT_STATIC;
     idc = -1;
     style = ST_LEFT;
@@ -179,8 +171,7 @@ class RscTitle
     text = "";
 };
 
-class ScrollBar
-{
+class ScrollBar {
 	color[] = {1, 1, 1, 0.6};
 	colorDisabled[] = {};
 	colorActive[] = {1, 1, 1, 1};
@@ -190,8 +181,7 @@ class ScrollBar
 	border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 };
 
-class RscTree
-{
+class RscTree {
 	access = 0;
 	idc = CT_TREE;
 	type = CT_TREE;
@@ -225,8 +215,7 @@ class RscTree
 	maxHistoryDelay = 1;
 
 	
-	class ScrollBar
-	{
+	class ScrollBar {
 		width = 0;
 		height = 0;
 		scrollSpeed = 0.01;

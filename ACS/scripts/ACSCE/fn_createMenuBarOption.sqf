@@ -15,26 +15,21 @@ _ctrl ctrlCommit 0;
 _mouseMovingAndHolding = "
 	hint str _this;
 	_thisCtrl = (_this select 0);
-	if (_this select 3) then
-	{
+	if (_this select 3) then {
 		_thisCtrl ctrlSetTextColor [0,0,0,1];
 		_thisCtrl ctrlSetBackgroundColor [1,1,1,1];
-		if (ACSCE_MENU_CLICKED) then
-		{
+		if (ACSCE_MENU_CLICKED) then {
 			_text = ctrlText _thisCtrl;
 			_text = 'ACSCE_' + _text;
-			_menuBar = uiNamespace getVariable ['ACSCE_WINDOW_MENU', []];
-			{
+			_menuBar = uiNamespace getVariable ['ACSCE_WINDOW_MENU', []]; {
 				_menuOptions = uiNamespace getVariable [_x, []];
-				if (_x == _text) then
-				{
+				if (_x == _text) then {
 					{
 						_x ctrlEnable true;
 						_x ctrlSetFade 0;
 						_x ctrlCommit 0;
 					} forEach _menuOptions;
-				} else
-				{
+				} else {
 					{
 						_x ctrlEnable false;
 						_x ctrlSetFade 1;
@@ -42,8 +37,7 @@ _mouseMovingAndHolding = "
 					} forEach _menuOptions;
 				};
 			} forEach _menuBar;
-		} else
-		{
+		} else {
 			_text = ctrlText _thisCtrl;
 			_text = 'ACSCE_' + _text;
 			_menuBar = uiNamespace getVariable ['ACSCE_WINDOW_MENU', []];
@@ -56,8 +50,7 @@ _mouseMovingAndHolding = "
 				} forEach _menuOptions;
 			} forEach _menuBar;
 		};
-	} else
-	{
+	} else {
 		_thisCtrl ctrlSetTextColor [1,1,1,1];
 		_thisCtrl ctrlSetBackgroundColor [0,0,0,1];
 	};
@@ -66,8 +59,7 @@ _ctrl ctrlAddEventHandler ["MouseMoving", _mouseMovingAndHolding];
 _ctrl ctrlAddEventHandler ["MouseHolding", _mouseMovingAndHolding];
 _ctrl ctrlAddEventHandler ["MouseButtonDown",
 "
-	if (!ACSCE_CLICK_IGNORE) then
-	{ACSCE_MENU_CLICKED = !ACSCE_MENU_CLICKED; ACSCE_CLICK_IGNORE = true;};
+	if (!ACSCE_CLICK_IGNORE) then {ACSCE_MENU_CLICKED = !ACSCE_MENU_CLICKED; ACSCE_CLICK_IGNORE = true;};
 "];
 _ctrl ctrlAddEventHandler ["MouseButtonUp",
 "

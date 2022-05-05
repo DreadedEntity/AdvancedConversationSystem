@@ -3,8 +3,7 @@
 //     Created by: DreadedEntity     //
 ///////////////////////////////////////
 
-if (count (tvCurSel 1500) > 0) then
-{
+if (count (tvCurSel 1500) > 0) then {
 	false call ACSCE_fnc_showRightMouseMenu;
 	[
 		"Delete Topic?",
@@ -16,8 +15,7 @@ if (count (tvCurSel 1500) > 0) then
 		nil,
 		"tvDelete [1500, (tvCurSel 1500)];ctrlSetText [1000, 'Conversation Editor - ' + ACSCE_CURRENT_CONVERSATION + '*'];ACSCE_UNSAVED_CHANGES = true;'ACSCE_AUTOSAVE' call ACSCE_fnc_saveTo; false call ACSCE_fnc_dimMainControls;"
 	] call ACSCE_fnc_showConfirmationWindow;
-} else
-{
+} else {
 	false call ACSCE_fnc_showRightMouseMenu;
 	[
 		"No Topic Selected!",

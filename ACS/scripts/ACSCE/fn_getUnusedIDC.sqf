@@ -14,8 +14,7 @@ _arr = [];
 } forEach (allControls (findDisplay 12345));
 
 _testNum = 3;
-while {_arr find _testNum > -1} do
-{
+while {_arr find _testNum > -1} do {
 	_testNum = _testNum + 1;
 };
 _testNum;

@@ -8,14 +8,11 @@ hint str _this;
 
 disableSerialization;
 
-switch (_this select 1) do
-{
-	case 0:
-	{
+switch (_this select 1) do {
+	case 0: {
 		false call ACSCE_fnc_showRightMouseMenu;
 	};
-	case 1:
-	{
+	case 1: {
 		true call ACSCE_fnc_showRightMouseMenu;
 		
 		{
