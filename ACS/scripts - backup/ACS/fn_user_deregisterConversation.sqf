@@ -1,0 +1,6 @@
+///////////////////////////////////////
+// Function file for Armed Assault 3 //
+//     Created by: DreadedEntity     //
+///////////////////////////////////////
+
+(_this) setVariable ["ACS_CONVERSATION", nil];

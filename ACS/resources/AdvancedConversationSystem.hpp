@@ -17,8 +17,12 @@ class AdvancedConversationSystem
 			y = 0.414996 * safezoneH + safezoneY;
 			w = 0.103526 * safezoneW;
 			h = 0.272013 * safezoneH;
-			
-			onLBDblClick = "_this spawn ACS_fnc_system_execute;";
+
+			//half-transparent
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
+
+			onLBDblClick = "_this spawn ACS_fnc_system_chooseTopic;";
 		};
 		class RscText_1000: RscText
 		{
@@ -28,7 +32,7 @@ class AdvancedConversationSystem
 			y = 0.414996 * safezoneH + safezoneY;
 			w = 0.509666 * safezoneW;
 			h = 0.0340016 * safezoneH;
-			
+
 			style = ST_RIGHT;
 		};
 		class RscText_1001: RscText
@@ -39,7 +43,11 @@ class AdvancedConversationSystem
 			y = 0.72101 * safezoneH + safezoneY;
 			w = 0.350395 * safezoneW;
 			h = 0.136006 * safezoneH;
-			
+
+			//half-transparent
+			//colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {0,0,0,0};
+
 			style = ST_MULTI + ST_CENTER + NO_BORDER;
 		};
 		class RscText_1002: RscText
@@ -49,7 +57,7 @@ class AdvancedConversationSystem
 			y = 0.414997 * safezoneH + safezoneY;
 			w = 0 * safezoneW;
 			h = 0.272013 * safezoneH;
-			
+
 			style = 178;
 			colorText[] = {1,1,1,1};
 		};

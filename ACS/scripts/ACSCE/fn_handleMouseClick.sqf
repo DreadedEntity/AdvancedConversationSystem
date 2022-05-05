@@ -4,7 +4,8 @@
 ///////////////////////////////////////
 
 _input = _this;
-hint str _this;
+
+if (ACSCE_DEBUG) then { hint str _this; };
 
 disableSerialization;
 

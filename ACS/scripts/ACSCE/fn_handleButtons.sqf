@@ -34,6 +34,7 @@ switch (_this) do
 				ctrlSetText [1399 + _i, _data select (_i - 1)];
 			};
 			uiNamespace setVariable ["ACSCE_STATE", EDIT];
+			ctrlSetText [1016, "Current Path: " + str ((tvCurSel 1500) call ACSCE_fnc_popFirstElement)];
 		} else
 		{
 			true call ACSCE_fnc_dimMainControls;

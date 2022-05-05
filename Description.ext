@@ -15,54 +15,15 @@ class CfgFunctions
 	#include "ACS\resources\ACSCE_functions.txt"
 };
 
-#define TESTCLASS(WTF,IS,THIS) \
-class TEST##WTF## \
-{ \
-	value1 = #IS; \
-	value2 = #THIS; \
-}
-
-TESTCLASS(HOWDOESTHISWORK,mystring1,mystring2);
+class CfgACSConversations
+{
+	captain_convo_1[] = {{{"['Start', 'Sir']","['sounds\player2.ogg']","[0.488]","['Well, It''s about time you showed up']","['sounds\captain1.ogg']","[3.053]","","",""},{{{"['Reporting', 'Reporting for duty']","['sounds\player3.ogg']","[1.242]","['Good', 'Listen soldier, we''re badly in need of manpower at this base, so the top dogs have given me you', 'I expect you to work hard and follow orders', 'Any questions?']","['sounds\captain2.ogg', 'sounds\captain3.ogg', 'sounds\captain4.ogg', 'sounds\captain5.ogg']","[0.569, 6.943, 3.355, 1.683]","","",""},{{{"['NATO forces', 'How many other NATO forces are here?']","['sounds\player4.ogg']","[2.345]","['That''s difficult to answer because there are a lot of different people around', 'But I would guess about a battalion''s worth of soldiers', 'and a million or a million and a half pounds worth of vehicles and equipment', 'Anything else?']","['sounds\captain6.ogg', 'sounds\captain7.ogg', 'sounds\captain8.ogg', 'sounds\captain9.ogg']","[4.284, 3.355, 4.203, 1.358]","","",""},{{{"['Where is this?']","","","[]","[]","[]","","[0]",""},{}},{{"['Hardly any soldiers']","","","['I told you we''re badly in need of men here.','I asked for reinforcements, they sent me one man.','I hope you''re a damn good soldier.']","[]","[2,2,2]","","[0]",""},{}},{{"['Why are we here?']","","","['We''re here to provide rapid response in case resistance troops try to cause trouble in Agia Marina.']","[]","[2]","","[0]",""},{}}}},{{"['Where is this?']","[]","[]","[]","[]","[]","","",""},{}}}}}}};
+	man_convo_1[] = {{{"['Start']","[]","[]","['Hey, the Captain wants to see you about something.']","['sounds\man1.ogg']","[2.276]","","",""},{{{"['About what?', 'What does he need me for?']","['sounds\player1.ogg']","[1.591]","['I dont know', 'He said it was important, though', 'You should probably see him quickly']","['sounds\man2.ogg','sounds\man3.ogg','sounds\man4.ogg']","[1.490,1.683,1.997]","['talkToCaptain', 'Talk to Captain', [Captain], 'targetWest.jpg'] execVM 'DE_simpleIconsJIP.sqf';","",""},{}}}}};
+};
 
 class CfgSounds
 {
 	sounds[] = {};
-	class DreadedEntity
-	{
-		// how the sound is referred to in the editor (e.g. trigger effects)
-		name = "DreadedEntity";
-		// filename, volume, pitch
-		sound[] = {"sounds\newsound.ogg", 1, 1};
-		// subtitle delay in seconds, subtitle text 
-		titles[] = {};
-	};
-	class helloENG
-	{
-		name = "helloENG";
-		sound[] = {"sounds\helloENG.ogg", 1, 1};
-		titles[] = {};
-	};
-	class helloGER
-	{
-		name = "helloGER";
-		sound[] = {"sounds\helloGER.ogg", 1, 1};
-		titles[] = {};
-	};
-	class hey
-	{
-		name = "hey";
-		sound[] = {"sounds\hey.ogg", 1, 1};
-		titles[] = {};
-	};
-	class song1
-	{
-		// how the sound is referred to in the editor (e.g. trigger effects)
-		name = "bleh";
-		// filename, volume, pitch
-		sound[] = {"sounds\space_battle.ogg", 1, 1};
-		// subtitle delay in seconds, subtitle text 
-		titles[] = {};
-	};
 	class player1
 	{
 		name = "player1";
@@ -91,6 +52,66 @@ class CfgSounds
 	{
 		name = "man4";
 		sound[] = {"sounds\man4.ogg", 1, 1};
+		titles[] = {};
+	};
+	class player2
+	{
+		name = "player2";
+		sound[] = {"sounds\player2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class captain1
+	{
+		name = "captain1";
+		sound[] = {"sounds\captain1.ogg", 1,1};
+		titles[] = {};
+	};
+	class captain2
+	{
+		name = "captain2";
+		sound[] = {"sounds\captain2.ogg", 1,1};
+		titles[] = {};
+	};
+	class captain3
+	{
+		name = "captain3";
+		sound[] = {"sounds\captain3.ogg", 1,1};
+		titles[] = {};
+	};
+	class captain4
+	{
+		name = "captain4";
+		sound[] = {"sounds\captain4.ogg", 1,1};
+		titles[] = {};
+	};
+	class captain5
+	{
+		name = "captain5";
+		sound[] = {"sounds\captain5.ogg", 1,1};
+		titles[] = {};
+	};
+	class captain6
+	{
+		name = "captain6";
+		sound[] = {"sounds\captain6.ogg", 1,1};
+		titles[] = {};
+	};
+	class captain7
+	{
+		name = "captain7";
+		sound[] = {"sounds\captain7.ogg", 1,1};
+		titles[] = {};
+	};
+	class captain8
+	{
+		name = "captain8";
+		sound[] = {"sounds\captain8.ogg", 1,1};
+		titles[] = {};
+	};
+	class captain9
+	{
+		name = "captain9";
+		sound[] = {"sounds\captain9.ogg", 1,1};
 		titles[] = {};
 	};
 };

@@ -11,6 +11,8 @@
 createDialog "ACS_Editor";
 waitUntil {!isNil {ACS_CE}};
 
+ACSCE_DEBUG = true;
+
 ACSCE_CLOSE_REQUESTED = false;
 ACSCE_WARNED_OVERWRITE = false;
 ACSCE_SAVELOAD_STATE = 0;
@@ -28,78 +30,7 @@ false call ACSCE_fnc_showRightMouseMenu;
 
 ctrlEnable [1000, false];
 
-_file = ["File",
-	[
-		0.0 * safezoneW + safezoneX,
-		0.028 * safezoneH + safezoneY,
-		0.030 * safezoneW,
-		0.02 * safezoneH
-	]
-] call ACSCE_fnc_createMenuBarOption;
-hint str _file;
-[_file, "New", 
-"
-	[
-		'Create New Conversation?',
-		'This action cannot be undone, be sure you have saved\nthe current conversation to prevent a loss of data.',
-		'Cancel',
-		nil,
-		'New',
-		'false call ACSCE_fnc_dimMainControls;',
-		nil,
-		'tvClear 1500; ACSCE_CURRENT_CONVERSATION = ''New''; ctrlSetText [1000, ''Conversation Editor - New'']; false call ACSCE_fnc_dimMainControls;'
-	] call ACSCE_fnc_showConfirmationWindow;
-"] call ACSCE_fnc_addToMenuBarOption;
-[_file, "Save", "profileNamespace setVariable [ACSCE_CURRENT_CONVERSATION, [[],0,[]] call ACSCE_fnc_saveConversation]; ACSCE_UNSAVED_CHANGES = false; ctrlSetText [1000, 'Conversation Editor - ' + ACSCE_CURRENT_CONVERSATION];"] call ACSCE_fnc_addToMenuBarOption;
-[_file, "Save as", "true call ACSCE_fnc_showSaveControls;"] call ACSCE_fnc_addToMenuBarOption;
-[_file, "Load", "true call ACSCE_fnc_showLoadControls;"] call ACSCE_fnc_addToMenuBarOption;
-[_file, "Import",
-"
-	tvClear 1500;
-	[[], call compile copyFromClipboard] call ACSCE_fnc_loadConversation;
-	ACSCE_CURRENT_CONVERSATION = 'Import';
-	ctrlSetText [1000, 'Conversation Editor - ' + ACSCE_CURRENT_CONVERSATION];
-"] call ACSCE_fnc_addToMenuBarOption;
-[_file, "Test Conv",
-"
-	player call ACS_fnc_user_deregisterConversation;
-	[player, profileNamespace getVariable ACSCE_CURRENT_CONVERSATION] call ACS_fnc_user_registerConversation;
-	call ACSCE_fnc_cleanup;
-	closeDialog 0;
-	_this call ACS_fnc_system_openDialog;
-"] call ACSCE_fnc_addToMenuBarOption;
-[_file, "Exit", "call ACSCE_fnc_closeEditor;"] call ACSCE_fnc_addToMenuBarOption;
-
-_load = ["Option 2",
-	[
-		0.030 * safezoneW + safezoneX,
-		0.028 * safezoneH + safezoneY,
-		0.040 * safezoneW,
-		0.02 * safezoneH
-	]
-] call ACSCE_fnc_createMenuBarOption;
-[_load, "Look", ""] call ACSCE_fnc_addToMenuBarOption;
-[_load, "How", ""] call ACSCE_fnc_addToMenuBarOption;
-[_load, "Cool", ""] call ACSCE_fnc_addToMenuBarOption;
-[_load, "This", ""] call ACSCE_fnc_addToMenuBarOption;
-[_load, "Is", ""] call ACSCE_fnc_addToMenuBarOption;
-
-_bull = ["Woo",
-	[
-		0.070 * safezoneW + safezoneX,
-		0.028 * safezoneH + safezoneY,
-		0.034 * safezoneW,
-		0.02 * safezoneH
-	]
-] call ACSCE_fnc_createMenuBarOption;
-[_bull, "All", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Of", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "These", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Menus", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Have", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Been", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Dynamically", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Created", ""] call ACSCE_fnc_addToMenuBarOption;
+[] call ACSCE_fnc_createWindowMenu;
 
 _check = profileNamespace getVariable ["ACSCE_AUTOSAVE", "NULL"];
 if (typeName _check == "ARRAY") then

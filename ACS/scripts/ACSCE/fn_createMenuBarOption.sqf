@@ -3,17 +3,27 @@
 //     Created by: DreadedEntity     //
 ///////////////////////////////////////
 
-_ctrl = (findDisplay 12345) ctrlCreate ["RscText", call ACSCE_fnc_getUnusedIDC];
+_offset = uiNamespace getVariable ["ACSCE_WINDOW_MENU_OFFSET", 0];
+
+_idc = call ACSCE_fnc_getUnusedIDC;
+_ctrl = (findDisplay 12345) ctrlCreate ["RscText", _idc];
 _ctrl ctrlEnable true;
 _ctrl ctrlSetText (_this select 0);
 _ctrl ctrlSetFontHeight (((((safezoneW / safezoneH) min 1.2) / 1.2) / 30) * 1);
 _ctrl ctrlSetTextColor [1,1,1,1];
 _ctrl ctrlSetBackgroundColor [0,0,0,1];
-_ctrl ctrlSetPosition (_this select 1);
+_ctrl ctrlSetPosition [
+		_offset * safezoneW + safezoneX,
+		0.028 * safezoneH + safezoneY,
+		(_this select 1) * safezoneW,
+		0.02 * safezoneH
+	];
 _ctrl ctrlCommit 0;
 
+uiNamespace setVariable ["ACSCE_WINDOW_MENU_OFFSET", _offset + (_this select 1)];
+
 _mouseMovingAndHolding = "
-	hint str _this;
+	if (ACSCE_DEBUG) then { hintSilent str _this; };
 	_thisCtrl = (_this select 0);
 	if (_this select 3) then
 	{
@@ -62,6 +72,7 @@ _mouseMovingAndHolding = "
 		_thisCtrl ctrlSetBackgroundColor [0,0,0,1];
 	};
 ";
+
 _ctrl ctrlAddEventHandler ["MouseMoving", _mouseMovingAndHolding];
 _ctrl ctrlAddEventHandler ["MouseHolding", _mouseMovingAndHolding];
 _ctrl ctrlAddEventHandler ["MouseButtonDown",
@@ -73,6 +84,11 @@ _ctrl ctrlAddEventHandler ["MouseButtonUp",
 "
 	ACSCE_CLICK_IGNORE = false;
 "];
+
+_menuControlsArray = uiNamespace getVariable ["ACSCE_WINDOW_MENU_CONTROLS", []];
+_menuControlsArray pushBack _idc;
+uiNamespace setVariable ["ACSCE_WINDOW_MENU_CONTROLS",  _menuControlsArray];
+systemChat str _menuControlsArray;
 
 _menuArray = uiNamespace getVariable ["ACSCE_WINDOW_MENU", []];
 _name = ("ACSCE_" + (_this select 0));

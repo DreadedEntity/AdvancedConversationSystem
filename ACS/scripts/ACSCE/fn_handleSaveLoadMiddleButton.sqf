@@ -26,7 +26,7 @@ switch (ACSCE_SAVELOAD_STATE) do
 		//SAVE - EXPORT
 		if ((lbCurSel 1501) > -1) then
 		{
-			copyToClipboard str (profileNamespace getVariable [lbText [1501, lbCurSel 1501], ["You Tried To Load A Null Conversation"]]);
+			(profileNamespace getVariable [lbText [1501, lbCurSel 1501], ["You Tried To Load A Null Conversation"]]) call ACSCE_fnc_fixOutput;
 			systemChat format["%1 was exported to clipboard", lbText [1501, lbCurSel 1501]];
 			systemChat "Press Ctrl+V to paste and save";
 		};

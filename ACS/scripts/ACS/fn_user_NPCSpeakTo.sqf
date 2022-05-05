@@ -7,7 +7,7 @@
 _initiator = (_this select 0);
 _speakingTo = (_this select 1);
 
-while {_initiator distance player > 4} do
+while {_initiator distance player > 5} do
 {
 	_initiator move (getpos player);
 	sleep 1;

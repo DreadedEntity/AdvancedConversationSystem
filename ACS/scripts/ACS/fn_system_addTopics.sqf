@@ -14,7 +14,7 @@ if (isNil "_parent") then
 	_children = ["NULL"];
 };
 
-systemChat str ((_parent select 0) select 0);
+//systemChat str ((_parent select 0) select 0);
 
 _length = count _this;
 _childAmount = count _children;
@@ -39,7 +39,7 @@ if (_childAmount > 0) then
 			};
 			_array set [_length, _forEachIndex];
 			lbSetData [1500, _index, str ([_array] + (_x select 0))];
-			systemChat (lbData [1500, _index]);
+//			systemChat (lbData [1500, _index]);
 //			if (_array in (player getVariable ["ACS_completedTopics", []])) then
 //			{
 //			lbSetColor [1500, _index, GREY];
