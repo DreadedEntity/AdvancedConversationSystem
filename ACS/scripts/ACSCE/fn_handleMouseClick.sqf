@@ -16,8 +16,8 @@ switch (_this select 1) do {
 		true call ACSCE_fnc_showRightMouseMenu;
 		
 		{
-			_control = (findDisplay 12345) displayCtrl _x;
-			_control ctrlSetPosition [(_this select 2), (_this select 3) + (_forEachIndex * (0.02 * safezoneH))];
+			_control = (uiNamespace getVariable "ACS_CE") displayCtrl _x;
+			_control ctrlSetPosition [_this # 2, (_this # 3) + (_forEachIndex * (0.02 * safezoneH))];
 			_control ctrlCommit 0;
 		} forEach [1601, 1602, 1605, 1606, 1610];
 	};

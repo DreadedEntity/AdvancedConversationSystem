@@ -3,20 +3,19 @@
 //     Created by: DreadedEntity     //
 ///////////////////////////////////////
 
-switch (_this) do {
-	case true: { {
-			ctrlEnable [_x, !_this];
-			((findDisplay 12345) displayCtrl _x) ctrlSetFade 0.75;
-			((findDisplay 12345) displayCtrl _x) ctrlCommit 0.25;
-		} forEach [1000, 1500, 1600, 1609];
-	};
-	case false: { {
-			ctrlEnable [_x, !_this];
-			((findDisplay 12345) displayCtrl _x) ctrlSetFade 0;
-			((findDisplay 12345) displayCtrl _x) ctrlCommit 0.25;
-		} forEach [1000, 1500, 1600, 1609];
-	};
-	default {
-		systemChat "You broke my shit.";
-	};
+
+private _fadeSettings = switch (_this) do {
+	case true: { [0.75, 0.25] };
+	case false: { [0,0.25] };
+	default {};
+};
+
+if (typeName _fadeSettings == "ARRAY") then {
+	private _dialog = uiNamespace getVariable "ACS_CE";
+	private _controls = [1000, 1500, 1600, 1609];
+	{
+		ctrlEnable [_x, !_this];
+		(_dialog displayCtrl _x) ctrlSetFade (_fadeSettings # 0);
+		(_dialog displayCtrl _x) ctrlCommit (_fadeSettings # 1);
+	} forEach _controls;
 };

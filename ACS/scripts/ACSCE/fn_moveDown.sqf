@@ -10,8 +10,8 @@ _element = tvCurSel 1500;
 hint str _element;
 
 [
-	"Command Not Implimented",
-	"Move Down is currently not implimented\nand should not be used at this time.",
+	"Command Not Implemented",
+	"Move Down is currently not implemented\nand should not be used at this time.",
 	nil,
 	nil,
 	"Okay",
@@ -28,5 +28,5 @@ if (count _element > 0) then {
 		tvSetData [1500, _element + [_i], str [_i,"","",""]];
 	};
 
-	((findDisplay 12345) displayCtrl 1500) tvSortByValue [_element select [0, (count _element) - 1], false];
+	((uiNamespace getVariable "ACS_CE") displayCtrl 1500) tvSortByValue [_element select [0, (count _element) - 1], false];
 };

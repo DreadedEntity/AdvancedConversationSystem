@@ -3,17 +3,15 @@
 //    Created by: DreadedEntity    //
 /////////////////////////////////////
 
-private ["_main","_path","_endCount","_depth"];
-
-_path = _this select 0;
-_main = _this select 1;
+params ["_path", "_main"];
+private ["_endCount", "_depth"];
 
 {
-	tvAdd [1500, _path, (_x select 0) select 0];
-	tvSetData [1500, _path + [(tvCount [1500, _path]) - 1], str(_x select 0)];
+	tvAdd [1500, _path, (_x # 0) # 0];
+	tvSetData [1500, _path + [(tvCount [1500, _path]) - 1], str(_x # 0)];
 	tvExpand [1500, _path];
 		
-	if (count (_x select 1) > 0) then {
-		[_path + [_forEachIndex], (_x select 1)] call ACSCE_fnc_loadConversation;
+	if (count (_x # 1) > 0) then {
+		[_path + [_forEachIndex], (_x # 1)] call ACSCE_fnc_loadConversation;
 	};
 } forEach _main;

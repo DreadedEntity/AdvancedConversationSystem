@@ -11,7 +11,7 @@ _arr = [];
 	_hash = (_str find "#") + 1;
 	_str = _str select [_hash, _count - _hash];
 	_arr pushBack (parseNumber _str);
-} forEach (allControls (findDisplay 12345));
+} forEach (allControls (uiNamespace getVariable "ACS_CE"));
 
 _testNum = 3;
 while {_arr find _testNum > -1} do {

@@ -23,7 +23,6 @@ for "_i" from 0 to _numChildren do {
 };
 
 if (_depth <= 0) then {
-//	hint str _edit;
 //	profileNamespace setVariable ["ACSCE_LAST_CONVERSATION_BACKUP", _edit];
 };
 

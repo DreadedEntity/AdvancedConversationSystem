@@ -11,7 +11,7 @@ _parent = _element select [0, (count _element) - 1];
 hint str _parent;
 
 [
-	"Command Not Fully Implimented",
+	"Command Not Fully Implemented",
 	"Move Up functionality is currently limited\nand should not be used at this time.",
 	nil,
 	nil,
@@ -32,5 +32,5 @@ if (count _element > 0) then {
 		tvSetData [1500, _parent + [_i - 1], str [_i,"","",""]];
 	};
 
-	((findDisplay 12345) displayCtrl 1500) tvSortByValue [_element select [0, (count _element) - 1], false];
+	((uiNamespace getVariable "ACS_CE") displayCtrl 1500) tvSortByValue [_element select [0, (count _element) - 1], false];
 };

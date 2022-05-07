@@ -3,7 +3,8 @@
 //     Created by: DreadedEntity     //
 ///////////////////////////////////////
 
-_ctrl = (findDisplay 12345) ctrlCreate ["RscText", call ACSCE_fnc_getUnusedIDC];
+_dialog = uiNamespace getVariable "ACS_CE";
+_ctrl = _dialog ctrlCreate ["RscText", call ACSCE_fnc_getUnusedIDC];
 _ctrl ctrlEnable true;
 _ctrl ctrlSetText (_this select 0);
 _ctrl ctrlSetFontHeight (((((safezoneW / safezoneH) min 1.2) / 1.2) / 30) * 1);

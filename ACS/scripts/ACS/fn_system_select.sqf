@@ -3,14 +3,13 @@
 //    Created by: DreadedEntity    //
 /////////////////////////////////////
 
-#define INFO     0
-#define CHILDREN 1
+private ["_pathLength","_depth"];
 
-private ["_conv", "_path", "_pathLength", "_target", "_depth"];
+params ["_conv","_path",["_depth",0,[0]]];
 
-_conv = (_this select 0); //conversation in
-_path = _this select 1; //tree path in
-_depth = [_this, 2, 0, [0]] call BIS_fnc_param;
+//_conv = (_this select 0); //conversation in
+//_path = _this select 1; //tree path in
+//_depth = [_this, 2, 0, [0]] call BIS_fnc_param;
 
 _pathLength = count _path;
 

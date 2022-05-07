@@ -7,25 +7,6 @@
 //sounds you add to the mission file must have the FULL filepath or they will not play. This is required.
 //sounds must also be registered to description.ext, look in mine for examples.
 
-/*
-player addEventHandler ["Fired", {
-	_bullet = (_this select 6);
-	_bullet spawn {
-		hint "Shot fired\nBegin Collecting Data";
-		_lineBreak = toString [13, 10];
-		_data = "----------" + _linebreak + "BEGIN SHOT DATA" + _linebreak + "----------" + _linebreak;
-		_startTime = time;
-		while {speed _this > 1} do {
-			_data = _data + (str (velocity _this) + _linebreak);
-		};
-		_endTime = time;
-		_data = _data + "----------" + _linebreak + "END SHOT DATA" + _linebreak + "----------" + _linebreak + "Start Time: " + (str _startTime) + " | " + "End Time: " + (str _endTime) + _linebreak + "Total Time: " + (str (_endTime - _startTime));
-		copyToClipboard _data;
-		hint "Shot stopped\nEnd Collecting Data";
-	};
-}];
-*/
-
 debug = true;
 player addAction ["Open ACSCE", {
 	[] call ACSCE_fnc_openEditor;
