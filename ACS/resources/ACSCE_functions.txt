@@ -11,8 +11,6 @@ class ACSCE {
 		class addTopic {};
 		class handleButtons {};
 		class handleAccept {};
-		class moveUp {};
-		class moveDown {};
 		class handleSaveLoadAccept {};
 		class handleDelete {};
 		class handleSaveLoadMiddleButton {};
