@@ -49,7 +49,7 @@ class ACS_Editor {
 			colorPictureRightSelected[] = {0,0,0,1};
 			colorPictureRightDisabled[] = {1,1,1,0.25};
 
-			onTreeSelChanged = "if (ctrlShown ((findDisplay 12345) displayCtrl 1001)) then {ctrlSetText [1400, tvText [1500, tvCurSel 1500]];ctrlSetText [1401, tvData [1500, tvCurSel 1500]];}; systemChat str (tvData [1500, tvCurSel 1500]);";
+			onTreeSelChanged = "if (ctrlShown ((findDisplay 12345) displayCtrl 1001)) then {ctrlSetText [1400, tvText [1500, tvCurSel 1500]];ctrlSetText [1401, tvData [1500, tvCurSel 1500]];}; systemChat str (tvData [1500, tvCurSel 1500]);ACSCE_MENU_CLICKED = false;";
 			onTreeDblClick = "systemChat str (tvValue [1500, _this select 1]);";
 //			onMouseMoving = "systemChat str _this;";
 			onMouseButtonDown = "_this call ACSCE_fnc_handleMouseClick";

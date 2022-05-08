@@ -122,8 +122,7 @@ if ((profileNamespace getVariable ["ACS_BUG_WARNING", 0]) == 0) then {
 };
 
 ACSCE_DIALOG displayAddEventHandler ["KeyDown", {
-	private "_return";
-	_return = false;
+	private _return = false;
 	if ((_this select 1) == 1) then {
 		_return = true;
 		call ACSCE_fnc_closeEditor;

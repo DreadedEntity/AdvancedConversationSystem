@@ -15,15 +15,6 @@ class CfgFunctions
 	#include "ACS\resources\ACSCE_functions.txt"
 };
 
-#define TESTCLASS(WTF,IS,THIS) \
-class TEST##WTF## \
-{ \
-	value1 = #IS; \
-	value2 = #THIS; \
-}
-
-TESTCLASS(HOWDOESTHISWORK,mystring1,mystring2);
-
 class CfgSounds
 {
 	sounds[] = {};
