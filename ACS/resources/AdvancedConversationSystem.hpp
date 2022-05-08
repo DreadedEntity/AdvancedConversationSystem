@@ -8,7 +8,7 @@ class AdvancedConversationSystem {
 		////////////////////////////////////////////////////////
 		// GUI EDITOR OUTPUT START (by DreadedEntity, v1.063, #Sodaqe)
 		////////////////////////////////////////////////////////
-		class RscListbox_1500: RscListbox {
+		class RscListbox_1500: ACSListbox {
 			idc = 1500;
 			x = 0.507964 * safezoneW + safezoneX;
 			y = 0.414996 * safezoneH + safezoneY;
@@ -17,7 +17,7 @@ class AdvancedConversationSystem {
 			
 			onLBDblClick = "_this spawn ACS_fnc_system_execute;";
 		};
-		class RscText_1000: RscText {
+		class RscText_1000: ACSText {
 			idc = 1000;
 			text = "test"; //--- ToDo: Localize;
 			x = -0.00170207 * safezoneW + safezoneX;
@@ -27,7 +27,7 @@ class AdvancedConversationSystem {
 			
 			style = ST_RIGHT;
 		};
-		class RscText_1001: RscText {
+		class RscText_1001: ACSText {
 			idc = 1001;
 			text = "test_dialogue"; //--- ToDo: Localize;
 			x = 0.332766 * safezoneW + safezoneX;
@@ -37,7 +37,7 @@ class AdvancedConversationSystem {
 			
 			style = ST_MULTI + ST_CENTER + NO_BORDER;
 		};
-		class RscText_1002: RscText {
+		class RscText_1002: ACSText {
 			idc = 1002;
 			x = 0.507964 * safezoneW + safezoneX;
 			y = 0.414997 * safezoneH + safezoneY;
