@@ -14,7 +14,7 @@ _ctrl ctrlSetPosition (_this select 1);
 _ctrl ctrlCommit 0;
 
 _mouseMovingAndHolding = "
-	hint str _this;
+	//hint str _this;
 	_thisCtrl = (_this select 0);
 	if (_this select 3) then {
 		_thisCtrl ctrlSetTextColor [0,0,0,1];

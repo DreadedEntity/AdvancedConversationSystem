@@ -36,7 +36,7 @@ _file = ["File",
 		0.02 * safezoneH
 	]
 ] call ACSCE_fnc_createMenuBarOption;
-hint str _file;
+//hint str _file;
 [_file, "New", 
 "
 	[

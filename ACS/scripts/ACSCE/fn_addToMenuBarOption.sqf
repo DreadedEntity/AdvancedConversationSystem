@@ -45,7 +45,7 @@ _ctrl ctrlAddEventHandler ["MouseButtonUp",
 _menuOptionArray = uiNamespace getVariable [(_this select 0) select 0, []];
 _menuOptionArray pushBack _ctrl;
 uiNamespace setVariable [(_this select 0) select 0,  _menuOptionArray];
-hint str _menuOptionArray;
+//hint str _menuOptionArray;
 
 _startY = 0.028 * safezoneH + safezoneY;
 _parentCtrl = (_this select 0) select 1;

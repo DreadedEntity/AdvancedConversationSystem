@@ -4,7 +4,7 @@
 ///////////////////////////////////////
 
 _input = _this;
-hint str _this;
+//hint str _this;
 
 disableSerialization;
 

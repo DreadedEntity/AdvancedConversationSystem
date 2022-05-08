@@ -21,12 +21,10 @@ if (ctrlText 1400 != "") then {
 	tvExpand [1500, _newTopic];
 	tvSetData [1500, _newTopic + [(tvCount [1500,_newTopic]) - 1],str [ctrlText 1400, ctrlText 1401, ctrlText 1402, ctrlText 1403, ctrlText 1404, ctrlText 1405, ctrlText 1406, ctrlText 1407, ctrlText 1408]];
 	
-	systemChat str _newTopic;
-	systemChat str (_newTopic + [(tvCount [1500,_newTopic]) - 1]);
+	//systemChat str _newTopic;
+	//systemChat str (_newTopic + [(tvCount [1500,_newTopic]) - 1]);
 	
-	ctrlSetText [1000, "Conversation Editor - " + ACSCE_CURRENT_CONVERSATION + "*"];
-	ACSCE_UNSAVED_CHANGES = true;
-	
+	call ACSCE_fnc_needsSave;
 	false call ACSCE_fnc_showEditControls;
 }else {
 	if (ctrlText 1400 == "") then {

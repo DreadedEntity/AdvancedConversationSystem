@@ -125,7 +125,7 @@ class ACS_Editor {
 			h = 0.02 * safezoneH;
 			sizeEx = 0.02 * safeZoneH;
 			
-			action = "call ACSCE_fnc_moveUp";
+			action = "'up' call ACSCE_fnc_move";
 			onLoad = "(_this select 0) ctrlEnable false";
 		};
 		class RscButton_1606: RscButton {
@@ -138,7 +138,7 @@ class ACS_Editor {
 			h = 0.02 * safezoneH;
 			sizeEx = 0.02 * safeZoneH;
 			
-			action = "";
+			action = "'down' call ACSCE_fnc_move";
 			onLoad = "(_this select 0) ctrlEnable false";
 		};
 		class RscButton_1610: RscButton {

@@ -30,5 +30,7 @@ class ACSCE {
 		class createMenuBarOption {};
 		class cleanup {};
 		class addToMenuBarOption {};
+		class needsSave {};
+		class move {};
 	};
 };
