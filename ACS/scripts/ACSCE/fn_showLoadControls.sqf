@@ -18,6 +18,6 @@ lbSetCurSel [1501, -1];
 } forEach (call ACSCE_fnc_getKnownSaves);
 
 {
-	ctrlEnable [_x, _this];
-	ctrlShow [_x, _this];
-}forEach [1011, 1409, 1607, 1608, 1501, 1012, 1611];
+	_x ctrlEnable _this;
+	_x ctrlShow _this;
+}forEach (uiNamespace getVariable ["ACSCE_SAVEMENU",[]]);

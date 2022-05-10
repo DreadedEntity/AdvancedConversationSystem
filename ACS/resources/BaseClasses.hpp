@@ -26,6 +26,7 @@ import RscTree;
 import RscButton;
 import RscEdit;
 import RscListbox;
+import RscBackground;
 
 ////////////////
 //Base Classes//
@@ -83,17 +84,13 @@ class ACSButton: RscButton {
 //    text = "";
 //};
 //
-//class RscBackground {
-//    type = CT_STATIC;
-//    idc = -1;
-//    style = ST_CENTER;
-//    shadow = 2;
-//    colorBackground[] = {0,0,0,0.0};
-//    colorText[] = {1,1,1,0.9};
-//    font = "PuristaLight";
-//    sizeEx = 0.03;
-//    text = "";
-//};
+class ACSBackground: RscBackground {
+    style = NO_BORDER;
+    font = "PuristaLight";
+	colorBackground[] = {0,0,0,0.5};
+    sizeEx = 0.03;
+    text = "";
+};
 
 class ACSTitle: RscTitle {
     idc = -1;

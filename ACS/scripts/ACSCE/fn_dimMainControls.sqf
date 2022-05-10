@@ -11,11 +11,10 @@ private _fadeSettings = switch (_this) do {
 };
 
 if (typeName _fadeSettings == "ARRAY") then {
-	private _dialog = uiNamespace getVariable "ACS_CE";
-	private _controls = [1000, 1500, 1600, 1609];
+	ctrlEnable [1500, !_this];
 	{
-		ctrlEnable [_x, !_this];
-		(_dialog displayCtrl _x) ctrlSetFade (_fadeSettings # 0);
-		(_dialog displayCtrl _x) ctrlCommit (_fadeSettings # 1);
-	} forEach _controls;
+		_x ctrlEnable (!_this);
+		_x ctrlSetFade (_fadeSettings # 0);
+		_x ctrlCommit (_fadeSettings # 1);
+	} forEach (uiNamespace getVariable ["ACSCE_MAINCONTROLS", []]);
 };

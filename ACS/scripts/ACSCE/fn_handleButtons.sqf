@@ -6,9 +6,7 @@
 #define NEW 0
 #define EDIT 1
 
-true call ACSCE_fnc_dimMainControls;
-ctrlEnable [1500, false];
-
+false call ACSCE_fnc_showRightMouseMenu;
 switch (_this) do {
 	case 0: {
 		true call ACSCE_fnc_showEditControls;
@@ -23,9 +21,9 @@ switch (_this) do {
 			
 			ctrlSetText [1400, tvText [1500, tvCurSel 1500]];
 			_data = call compile (tvData [1500, tvCurSel 1500]);
-			_count = count _data;
-			for "_i" from 1 to _count do {
-				ctrlSetText [1399 + _i, _data select (_i - 1)];
+			_count = (count _data) - 1;
+			for "_i" from 0 to _count do {
+				ctrlSetText [1400 + _i, _data # _i];
 			};
 			uiNamespace setVariable ["ACSCE_STATE", EDIT];
 		} else {
@@ -40,5 +38,3 @@ switch (_this) do {
 	};
 	default {};
 };
-
-false call ACSCE_fnc_showRightMouseMenu;

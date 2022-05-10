@@ -3,8 +3,7 @@ ReadMe text file
 Created by: DreadedEntity
 ------------------------------------------------------------------
 
-Create Window Menu - Medium Priority
-
-Hotkey system - High Priority
-
+Update code using modern sqf commands and better programming knowledge
+Fix visual issues with GUI
+Create Hotkey system
 Create Tutorial

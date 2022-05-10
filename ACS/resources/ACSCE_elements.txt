@@ -3,13 +3,13 @@ ReadMe text file
 Created by: DreadedEntity
 ------------------------------------------------------------------
 
-/* #Qoxexi
+/* #Pygiwy
 $[
 	1.063,
 	["ACS_conversationEditor",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
 	[1010,"",[1,"v16",["0.97427 * safezoneW + safezoneX","0.970333 * safezoneH + safezoneY","0.0328041 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1500,"",[1,"",["0.00125004 * safezoneW + safezoneX","0.0380001 * safezoneH + safezoneY","0.9975 * safezoneW","0.952 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-	[1000,"",[1,"test",["0 * safezoneW + safezoneX","0 * safezoneH + safezoneY","1 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[1,"Editor Title",["0 * safezoneW + safezoneX","0 * safezoneH + safezoneY","1 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1600,"",[1,"Close",["0.9725 * safezoneW + safezoneX","-0.00399999 * safezoneH + safezoneY","0.0262433 * safezoneW","0.042 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1601,"",[1,"New Topic",["0.165312 * safezoneW + safezoneX","0.682 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1602,"",[1,"Edit Topic",["0.165312 * safezoneW + safezoneX","0.696 * safezoneH + safezoneY","0.0590625 * safezoneW","0.02 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
@@ -50,66 +50,7 @@ $[
 	[1614,"",[1,"Button_YES",["0.565608 * safezoneW + safezoneX","0.318 * safezoneH + safezoneY","0.0918515 * safezoneW","0.028 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1015,"",[1,"",["0.00125001 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.9975 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1615,"",[1,"File",["0.00125001 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.039375 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-	[1609,"",[1,"Load",["0.040625 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.0459375 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+	[1609,"",[1,"Load",["0.040625 * safezoneW + safezoneX","0.024 * safezoneH + safezoneY","0.0459375 * safezoneW","0.014 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1800,"",[1,"",["0.237567 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.524866 * safezoneW","0.384002 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
 ]
 */
-
-		////////////////////////////////////////////////////////
-		// GUI EDITOR OUTPUT START (by DreadedEntity, v1.063, #Hogine)
-		////////////////////////////////////////////////////////
-
-		class RscText_1010: RscText
-		{
-			idc = 1010;
-			text = "v16"; //--- ToDo: Localize;
-			x = 0.97427 * safezoneW + safezoneX;
-			y = 0.970333 * safezoneH + safezoneY;
-			w = 0.0328041 * safezoneW;
-			h = 0.028 * safezoneH;
-		};
-		class RscListbox_1500: RscListbox
-		{
-			idc = 1500;
-			x = 0.0 * safezoneW + safezoneX;
-			y = 0.042 * safezoneH + safezoneY;
-			w = 1 * safezoneW;
-			h = 0.958 * safezoneH;
-		};
-		class RscText_1000: RscText
-		{
-			idc = 1000;
-			text = "test"; //--- ToDo: Localize;
-			x = 0 * safezoneW + safezoneX;
-			y = 0 * safezoneH + safezoneY;
-			w = 1 * safezoneW;
-			h = 0.028 * safezoneH;
-		};
-		class RscText_1015: RscText
-		{
-			idc = 1015;
-			x = 0.0 * safezoneW + safezoneX;
-			y = 0.028 * safezoneH + safezoneY;
-			w = 1 * safezoneW;
-			h = 0.014 * safezoneH;
-		};
-		class RscButton_1615: RscButton
-		{
-			idc = 1615;
-			text = "File"; //--- ToDo: Localize;
-			x = 0.0 * safezoneW + safezoneX;
-			y = 0.028 * safezoneH + safezoneY;
-			w = 0.040 * safezoneW;
-			h = 0.014 * safezoneH;
-		};
-		class RscButton_1609: RscButton
-		{
-			idc = 1609;
-			text = "Load"; //--- ToDo: Localize;
-			x = 0.040 * safezoneW + safezoneX;
-			y = 0.028 * safezoneH + safezoneY;
-			w = 0.046 * safezoneW;
-			h = 0.014 * safezoneH;
-		};
-		////////////////////////////////////////////////////////
-		// GUI EDITOR OUTPUT END
-		////////////////////////////////////////////////////////

@@ -26,8 +26,6 @@ false call ACSCE_fnc_showLoadControls;
 call ACSCE_fnc_closeConfirmationWindow;
 false call ACSCE_fnc_showRightMouseMenu;
 
-ctrlEnable [1000, false];
-
 _file = ["File",
 	[
 		0.0 * safezoneW + safezoneX,
@@ -67,7 +65,7 @@ _file = ["File",
 }] call ACSCE_fnc_addToMenuBarOption;
 [_file, "Exit", "call ACSCE_fnc_closeEditor;"] call ACSCE_fnc_addToMenuBarOption;
 
-_load = ["Option 2",
+_load = ["Edit",
 	[
 		0.030 * safezoneW + safezoneX,
 		0.028 * safezoneH + safezoneY,
@@ -75,13 +73,14 @@ _load = ["Option 2",
 		0.02 * safezoneH
 	]
 ] call ACSCE_fnc_createMenuBarOption;
-[_load, "Look", ""] call ACSCE_fnc_addToMenuBarOption;
-[_load, "How", ""] call ACSCE_fnc_addToMenuBarOption;
-[_load, "Cool", ""] call ACSCE_fnc_addToMenuBarOption;
-[_load, "This", ""] call ACSCE_fnc_addToMenuBarOption;
-[_load, "Is", ""] call ACSCE_fnc_addToMenuBarOption;
+[_load, "Undo", ""] call ACSCE_fnc_addToMenuBarOption;
+[_load, "Redo", ""] call ACSCE_fnc_addToMenuBarOption;
+[_load, "Cut", ""] call ACSCE_fnc_addToMenuBarOption;
+[_load, "Copy", ""] call ACSCE_fnc_addToMenuBarOption;
+[_load, "Paste", ""] call ACSCE_fnc_addToMenuBarOption;
+[_load, "Delete", ""] call ACSCE_fnc_addToMenuBarOption;
 
-_bull = ["Woo",
+_bull = ["Help",
 	[
 		0.070 * safezoneW + safezoneX,
 		0.028 * safezoneH + safezoneY,
@@ -89,14 +88,8 @@ _bull = ["Woo",
 		0.02 * safezoneH
 	]
 ] call ACSCE_fnc_createMenuBarOption;
-[_bull, "All", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Of", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "These", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Menus", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Have", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Been", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Dynamically", ""] call ACSCE_fnc_addToMenuBarOption;
-[_bull, "Created", ""] call ACSCE_fnc_addToMenuBarOption;
+[_bull, "Tutorial", ""] call ACSCE_fnc_addToMenuBarOption;
+[_bull, "About", ""] call ACSCE_fnc_addToMenuBarOption;
 
 _check = profileNamespace getVariable ["ACSCE_AUTOSAVE", "NULL"];
 if (typeName _check == "ARRAY") then {

@@ -51,23 +51,24 @@ _buttonStartHeight = 0.2975 * safezoneH + safezoneY;
 _messagePosition = _messageStartPosition;
 
 _messagePosition set [3, (_messagePosition select 3) * _newlines];
-((findDisplay 12345) displayCtrl 1014) ctrlSetPosition _messagePosition;
-((findDisplay 12345) displayCtrl 1014) ctrlCommit 0;
+
+private _dialog = uiNamespace getVariable "ACS_CE";
+(_dialog displayCtrl 1014) ctrlSetPosition _messagePosition;
+(_dialog displayCtrl 1014) ctrlCommit 0;
 
 {
-	_control = ((findDisplay 12345) displayCtrl _x);
-	_buttonPosition = ctrlPosition _control;
+	_buttonPosition = ctrlPosition _x;
 	_buttonPosition set [1, _buttonStartHeight + (_messagePosition select 3)];
-	_control ctrlSetPosition _buttonPosition;	
-	_control ctrlCommit 0;
-} forEach [1612, 1613, 1614];
+	_x ctrlSetPosition _buttonPosition;	
+	_x ctrlCommit 0;
+} forEach (uiNamespace getVariable ["ACSCE_CONFIRM_BUTTONS",[]]);
 
 {
-	ctrlSetText [_x, ""];
-	ctrlEnable [_x, true];
+	_x ctrlSetText "";
+	_x ctrlEnable true;
 	if (!isNil {_this select _forEachIndex}) then {
-		ctrlSetText [_x, _this select _forEachIndex];
+		_x ctrlSetText (_this select _forEachIndex);
 	};
-	((findDisplay 12345) displayCtrl _x) ctrlSetFade 0;
-	((findDisplay 12345) displayCtrl _x) ctrlCommit 0.25;
-} forEach [1013, 1014, 1612, 1613, 1614]
+	_x ctrlSetFade 0;
+	_x ctrlCommit 0.25;
+} forEach (uiNamespace getVariable ["ACSCE_CONFIRM",[]]);

@@ -32,5 +32,6 @@ class ACSCE {
 		class move {};
 		class closeMenu {};
 		class menuMouseover {};
+		class addToControlGroup {};
 	};
 };

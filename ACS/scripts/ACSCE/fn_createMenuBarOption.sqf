@@ -25,19 +25,15 @@ _mouseMovingAndHolding = {
 			_menuBar = uiNamespace getVariable ['ACSCE_WINDOW_MENU', []];
 			{
 				_menuOptions = uiNamespace getVariable [_x, []];
+				private _controlSettings = [false, 1, 0];
 				if (_x == _text) then {
-					{
-						_x ctrlEnable true;
-						_x ctrlSetFade 0;
-						_x ctrlCommit 0;
-					} forEach _menuOptions;
-				} else {
-					{
-						_x ctrlEnable false;
-						_x ctrlSetFade 1;
-						_x ctrlCommit 0;
-					} forEach _menuOptions;
+					_controlSettings = [true, 0, 0];
 				};
+				{
+					_x ctrlEnable (_controlSettings # 0);
+					_x ctrlSetFade (_controlSettings # 1);
+					_x ctrlCommit (_controlSettings # 2);
+				} forEach _menuOptions;
 			} forEach _menuBar;
 		} else {
 			_text = ctrlText _thisCtrl;
@@ -60,6 +56,7 @@ _mouseMovingAndHolding = {
 _ctrl ctrlAddEventHandler ["MouseMoving", _mouseMovingAndHolding];
 _ctrl ctrlAddEventHandler ["MouseHolding", _mouseMovingAndHolding];
 _ctrl ctrlAddEventHandler ["MouseButtonDown", {
+	false call ACSCE_fnc_showRightMouseMenu;
 	if (!ACSCE_CLICK_IGNORE) then {ACSCE_MENU_CLICKED = !ACSCE_MENU_CLICKED; ACSCE_CLICK_IGNORE = true;};
 }];
 _ctrl ctrlAddEventHandler ["MouseButtonUp", {
