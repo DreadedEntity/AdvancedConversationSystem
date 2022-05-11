@@ -400,7 +400,7 @@ class ACS_Editor {
 		};
 		class RscText_1012: ACSTitle {
 			idc = 1012;
-			text = "Known Conversations"; //--- ToDo: Localize;
+			text = "Saved Conversations"; //--- ToDo: Localize;
 			x = 0.237567 * safezoneW + safezoneX;
 			y = 0.248 * safezoneH + safezoneY;
 			w = 0.249311 * safezoneW;
