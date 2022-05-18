@@ -4,8 +4,7 @@
 ///////////////////////////////////////
 
 //Forces first object to open dialogue with the second object
-_initiator = (_this select 0);
-_speakingTo = (_this select 1);
+params ["_initiator","_speakingTo"];
 
 while {_initiator distance player > 4} do {
 	_initiator move (getpos player);
@@ -25,11 +24,9 @@ _dirToSpe = [_initiator, _speakingTo] call BIS_fnc_dirTo;
 	_dirToInit = (_this select 0);
 	_speakingTo = (_this select 1);
 	
-	_deltaDir = 0;
+	_deltaDir = 1;
 	if (_dirToInit - (direction _speakingTo) > 180) then {
 		_deltaDir = -1;
-	} else {
-		_deltaDir = 1;
 	};
 	
 	_speakingTo setDir _dirToInit;
@@ -44,11 +41,9 @@ _dirToSpe = [_initiator, _speakingTo] call BIS_fnc_dirTo;
 	_dirToSpe = (_this select 0);
 	_initiator = (_this select 1);
 	
-	_deltaDir = 0;
+	_deltaDir = 1;
 	if (_dirToSpe - (direction _initiator) > 180) then {
 		_deltaDir = -1;
-	} else {
-		_deltaDir = 1;
 	};
 	
 	_initiator setDir _dirToSpe;

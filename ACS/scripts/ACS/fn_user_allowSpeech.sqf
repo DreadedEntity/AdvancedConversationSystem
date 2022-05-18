@@ -5,4 +5,4 @@
 
 _this addAction ["Talk to " + (name _this), {
 	_this call ACS_fnc_system_openDialog;
-},[],6, false, true];
+},nil,6, false, true];

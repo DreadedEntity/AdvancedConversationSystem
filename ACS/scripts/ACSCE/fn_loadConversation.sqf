@@ -12,7 +12,7 @@ private _control = _dialog displayCtrl 1500;
 	private _index = _control tvAdd [_path, (_x # 0) # 0];
 	private _new = _path + [_index];
 	_control tvSetValue [_new, _index];
-	tvSetText [1500, _new, format ["%1 Value: %2", _x # 0 # 0, _control tvValue _new]];
+	tvSetText [1500, _new, _x # 0 # 0];
 	tvSetData [1500, _new, str(_x # 0)];
 	tvExpand [1500, _path];
 		

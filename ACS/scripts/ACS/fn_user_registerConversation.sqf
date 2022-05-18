@@ -3,4 +3,4 @@
 //     Created by: DreadedEntity     //
 ///////////////////////////////////////
 
-(_this select 0) setVariable ["ACS_CONVERSATION", (_this select 1)];
+(_this # 0) setVariable ["ACS_CONVERSATION", (_this # 1)];
