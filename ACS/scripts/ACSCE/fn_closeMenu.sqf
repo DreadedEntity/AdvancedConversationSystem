@@ -5,8 +5,8 @@
 
 ACSCE_MENU_CLICKED = false;
 _text = ctrlText _thisCtrl;
-_text = 'ACSCE_' + _text;
-_menuBar = uiNamespace getVariable ['ACSCE_WINDOW_MENU', []];
+_text = 'ACSCE_WINDOWMENU_' + _text;
+_menuBar = uiNamespace getVariable ['ACSCE_WINDOWMENU', []];
 {
 	_menuOptions = uiNamespace getVariable [_x, []];
 	{

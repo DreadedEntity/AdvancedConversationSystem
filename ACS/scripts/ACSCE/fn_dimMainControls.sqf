@@ -16,5 +16,5 @@ if (typeName _fadeSettings == "ARRAY") then {
 		_x ctrlEnable (!_this);
 		_x ctrlSetFade (_fadeSettings # 0);
 		_x ctrlCommit (_fadeSettings # 1);
-	} forEach (uiNamespace getVariable ["ACSCE_MAINCONTROLS", []]);
+	} forEach ((uiNamespace getVariable ["ACSCE_MAINCONTROLS", []]) + (uiNamespace getVariable ["ACSCE_WINDOWMENU_CONTROLS", []]));
 };

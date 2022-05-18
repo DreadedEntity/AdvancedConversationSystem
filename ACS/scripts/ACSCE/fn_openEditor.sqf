@@ -8,7 +8,7 @@
 
 //disableSerialization;
 
-createDialog "ACS_Editor";
+private _dialog = createDialog ["ACS_Editor", false];
 waitUntil {!isNil {ACS_CE}};
 
 ACSCE_CLOSE_REQUESTED = false;
@@ -69,7 +69,7 @@ _load = ["Edit",
 	[
 		0.030 * safezoneW + safezoneX,
 		0.028 * safezoneH + safezoneY,
-		0.040 * safezoneW,
+		0.030 * safezoneW,
 		0.02 * safezoneH
 	]
 ] call ACSCE_fnc_createMenuBarOption;
@@ -82,7 +82,7 @@ _load = ["Edit",
 
 _bull = ["Help",
 	[
-		0.070 * safezoneW + safezoneX,
+		0.060 * safezoneW + safezoneX,
 		0.028 * safezoneH + safezoneY,
 		0.034 * safezoneW,
 		0.02 * safezoneH
@@ -119,3 +119,14 @@ ACSCE_DIALOG displayAddEventHandler ["KeyDown", {
 	};
 	_return;
 }];
+
+//private _dialog = uiNamespace getVariable "ACS_CE";
+//
+//{
+//	_x ctrlAddEventHandler ["MouseHolding", {
+//		hintSilent str _this;
+//	}];
+//	_x ctrlAddEventHandler ["MouseMoving", {
+//		hintSilent str _this;
+//	}];
+//} forEach allControls _dialog;

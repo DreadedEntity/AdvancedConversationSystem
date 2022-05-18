@@ -37,6 +37,7 @@ class ACS_Editor {
 			w = 1 * safezoneW;
 			h = 0.028 * safezoneH;
 			onMouseButtonDown = "call ACSCE_fnc_closeMenu; false call ACSCE_fnc_showRightMouseMenu; ctrlSetFocus (displayCtrl 1600);";
+			onMouseButtonDblClick = "ctrlSetFocus (displayCtrl 1600)";
 			onLoad = "[_this # 0, 'ACSCE_MAINCONTROLS'] call ACSCE_fnc_addToControlGroup";
 		};
 		class RscListbox_1500: ACSTree {
@@ -64,9 +65,9 @@ class ACS_Editor {
 			text = "ACS\resources\top_close_gs.paa"; //--- ToDo: Localize;
 			shadow = 2;
 			
-			x = 0.9725 * safezoneW + safezoneX;
-			y = -0.00399999 * safezoneH + safezoneY;
-			w = 0.0262433 * safezoneW;
+			x = 0.979 * safezoneW + safezoneX;
+			y = -0.007 * safezoneH + safezoneY;
+			w = 0.023625 * safezoneW;
 			h = 0.042 * safezoneH;
 			
 			onMouseButtonDown = "call ACSCE_fnc_closeEditor";
@@ -78,9 +79,9 @@ class ACS_Editor {
 		};
 		class RscText_1015: ACSText {
 			idc = 1015;
-			x = 0.103 * safezoneW + safezoneX;
+			x = 0.094 * safezoneW + safezoneX;
 			y = 0.028 * safezoneH + safezoneY;
-			w = 0.897 * safezoneW;
+			w = 0.906 * safezoneW;
 			h = 0.02 * safezoneH;
 			//colorActive[] = {1,1,1,1};
 			colorBackground[] = {0,0,0,1};

@@ -4,6 +4,21 @@
 ///////////////////////////////////////
 
 _dialog = uiNamespace getVariable "ACS_CE";
+
+//Auto-scaling menubar - Doesn't work and don't want to spend the time to fix it right now, will do it manually in config
+//_line = _dialog displayCtrl 1015;
+//_currentSize = ctrlPosition _line;
+//_newControlWidth = (_this # 1 # 2) / safeZoneW;
+//_newLineX = (_currentSize # 0) / safeZoneW - safeZoneX + _newControlWidth;
+//_newLineWidth = (_currentSize # 2) / safeZoneW - _newControlWidth;
+//_line ctrlSetPosition [
+//	_newLineX * safeZoneW + safeZoneX,
+//	_currentSize # 1,
+//	_newLineWidth,
+//	_currentSize # 3
+//];
+//_line ctrlCommit 0;
+
 _ctrl = _dialog ctrlCreate ["RscText", call ACSCE_fnc_getUnusedIDC];
 _ctrl ctrlEnable true;
 _ctrl ctrlSetText (_this select 0);
@@ -28,7 +43,7 @@ _mouseMovingAndHolding = {
 	_thisCtrl = (_this select 0);
 	if (_this select 3) then {
 		_text = ctrlText _thisCtrl;
-		_text = 'ACSCE_' + _text;
+		_text = 'ACSCE_WINDOWMENU_' + _text;
 		{
 			private _controlSettings = if (ACSCE_MENU_CLICKED && {_x == _text}) then { [true, 0, 0] } else { [false, 1, 0] };
 			{
@@ -36,7 +51,7 @@ _mouseMovingAndHolding = {
 				_x ctrlSetFade (_controlSettings # 1);
 				_x ctrlCommit (_controlSettings # 2);
 			} forEach (uiNamespace getVariable [_x, []]);
-		} forEach (uiNamespace getVariable ['ACSCE_WINDOW_MENU', []]);
+		} forEach (uiNamespace getVariable ['ACSCE_WINDOWMENU', []]);
 	};
 };
 _ctrl ctrlAddEventHandler ["MouseMoving", _mouseMovingAndHolding];
@@ -51,8 +66,12 @@ _ctrl ctrlAddEventHandler ["MouseButtonUp", {
 	ACSCE_CLICK_IGNORE = false;
 }];
 
-_menuArray = uiNamespace getVariable ["ACSCE_WINDOW_MENU", []];
-_name = ("ACSCE_" + (_this select 0));
+_controlsArray = uiNamespace getVariable ["ACSCE_WINDOWMENU_CONTROLS", []];
+_controlsArray pushBack _ctrl;
+uiNamespace setVariable ["ACSCE_WINDOWMENU_CONTROLS", _controlsArray];
+
+_menuArray = uiNamespace getVariable ["ACSCE_WINDOWMENU", []];
+_name = ("ACSCE_WINDOWMENU_" + (_this select 0));
 _menuArray pushBack _name;
-uiNamespace setVariable ["ACSCE_WINDOW_MENU",  _menuArray];
+uiNamespace setVariable ["ACSCE_WINDOWMENU",  _menuArray];
 [_name, _ctrl];

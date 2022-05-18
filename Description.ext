@@ -3,6 +3,8 @@
 //     Created by: DreadedEntity      //
 ////////////////////////////////////////
 
+#define SOUND(NAME,PATH) class NAME { name = #NAME; sound[] = {PATH,1,1}; titles[] = {}; };
+
 author = DreadedEntity;
 
 #include "ACS\resources\BaseClasses.hpp"
@@ -27,61 +29,13 @@ class CfgSounds
 		// subtitle delay in seconds, subtitle text 
 		titles[] = {};
 	};
-	class helloENG
-	{
-		name = "helloENG";
-		sound[] = {"sounds\helloENG.ogg", 1, 1};
-		titles[] = {};
-	};
-	class helloGER
-	{
-		name = "helloGER";
-		sound[] = {"sounds\helloGER.ogg", 1, 1};
-		titles[] = {};
-	};
-	class hey
-	{
-		name = "hey";
-		sound[] = {"sounds\hey.ogg", 1, 1};
-		titles[] = {};
-	};
-	class song1
-	{
-		// how the sound is referred to in the editor (e.g. trigger effects)
-		name = "bleh";
-		// filename, volume, pitch
-		sound[] = {"sounds\space_battle.ogg", 1, 1};
-		// subtitle delay in seconds, subtitle text 
-		titles[] = {};
-	};
-	class player1
-	{
-		name = "player1";
-		sound[] = {"sounds\player1.ogg", 1, 1};
-		titles[] = {};
-	};
-	class man1
-	{
-		name = "man1";
-		sound[] = {"sounds\man1.ogg", 1, 1};
-		titles[] = {};
-	};
-	class man2
-	{
-		name = "man2";
-		sound[] = {"sounds\man2.ogg", 1, 1};
-		titles[] = {};
-	};
-	class man3
-	{
-		name = "man3";
-		sound[] = {"sounds\man3.ogg", 1, 1};
-		titles[] = {};
-	};
-	class man4
-	{
-		name = "man4";
-		sound[] = {"sounds\man4.ogg", 1, 1};
-		titles[] = {};
-	};
+	SOUND(helloENG, "sounds\helloENG.ogg")
+	SOUND(helloGER, "sounds\helloGER.ogg")
+	SOUND(hey, "sounds\hey.ogg")
+	SOUND(song1, "sounds\space_battle.ogg")
+	SOUND(player1, "sounds\player1.ogg")
+	SOUND(man1, "sounds\man1.ogg")
+	SOUND(man2, "sounds\man2.ogg")
+	SOUND(man3, "sounds\man3.ogg")
+	SOUND(man4, "sounds\man4.ogg")
 };
