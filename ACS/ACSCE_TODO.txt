@@ -3,7 +3,6 @@ ReadMe text file
 Created by: DreadedEntity
 ------------------------------------------------------------------
 
-Update code using modern sqf commands and better programming knowledge
-Fix visual issues with GUI
+Make sure topics are properly saved after editing
 Create Hotkey system
 Create Tutorial

@@ -10,5 +10,12 @@ class ACS {
 		class user_registerConversation {};
 		class user_deregisterConversation {};
 		class user_allowSpeech {};
+		class system_converse {};
+		class system_doTopic {};
+		class system_addToControlGroup {};
+		class system_dimMainControls {};
+		class system_setNameTextbox {};
+		class system_setDialogueTextbox {};
+		class system_select2 {};
 	};
 };

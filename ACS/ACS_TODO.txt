@@ -3,10 +3,7 @@ ReadMe text file
 Created by: DreadedEntity
 ------------------------------------------------------------------
 
-Add more useful user functions - Critical
-
-Expand subtitle textbox (control 1001) to hold longer strings. - Medium Priority
-RELATED: Maybe work on a way to dynamically expand/shrink for longer/shorter text (possible??) - Low Priority
-^ Fixed by changing the control to allow multiple lines
+Add more useful user functions
+Get conditional topics working
 
 Remove debug printouts - Medium Priority
