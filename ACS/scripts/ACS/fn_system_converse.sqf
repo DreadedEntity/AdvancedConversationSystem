@@ -26,7 +26,7 @@ if (_count > 0) then {
 			};
 		} forEach _x;
 	} forEach [_soundArray, _soundLengthArray];
-	ACS_CALLER setRandomLip true;
+	
 	private _lists = if (_offset) then { _textArray select [1, _count] } else { _textArray };
 	{
 		diag_log format ["Beginning loop %1", _forEachIndex];
@@ -38,15 +38,9 @@ if (_count > 0) then {
 		if (_sound != "") then {
 			_sound = if (_sound find "STR_" == 0) then { localize _sound } else { _sound };
 			diag_log format ["Sound: %1", _sound];
-			playSound3D [[ACS_MISSION_PATH, _sound] joinString "", ACS_CALLER];
+			private _speaker = if (_offset) then { ACS_CALLER } else { ACS_SPEAKER };
+			private _soundSource = _speaker say3D _sound;
+			waitUntil {isNull _soundSource || ACS_INTERRUPT};
 		};
-		private _soundLength = _soundLengthArray # _forEachIndex;
-		private _ACS_TIME = time;
-		_soundLength = if (typeName _soundLength == "STRING") then {
-			call compile (if (_soundLength find "NUM_" == 0) then { (localize _soundLength) } else { _soundLength })
-		} else { _soundLength };
-		diag_log format ["SoundLength: %1", _soundLength];
-		waitUntil {(time > (_ACS_TIME + _soundLength)) || ACS_INTERRUPT};
 	} forEach _lists;
-	ACS_CALLER setRandomLip false;
 };

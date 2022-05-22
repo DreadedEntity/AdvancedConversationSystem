@@ -16,7 +16,7 @@ player addAction ["Test Conversation", {
 	_this call ACS_fnc_system_openDialog;
 },[], 6, false, true, "", "debug"];
 
-OFFICER_CONVERSATION = [[["['Start']","","","['Hey', 'Hey', 'Hey']","['sounds\hey.ogg', 'sounds\hey.ogg', 'sounds\hey.ogg']","[0.453, 0.453, 0.453]","","",""],[[["['Another Topic']","sounds\newsound.ogg","5.248","","","","","",""],[]],[["['Test2']","","","","","","","",""],[]],[["['Hello', 'This is a test', 'that will hopefully allow ACS', 'to show multiple prompts and sounds']","['sounds\newsound.ogg', 'sounds\newsound.ogg', 'sounds\newsound.ogg']","[0.5, 0.5, 4.248]","['This is another test', 'that I hope works', 'because I''ve worked hard']","['sounds\newsound.ogg', 'sounds\newsound.ogg', 'sounds\newsound.ogg']","[5.248, 5.248, 5.248]","","[]",""],[]]]]];
+OFFICER_CONVERSATION = [[["['Start']","","","['Hey', 'Hey', 'Hey']","['hey', 'hey', 'hey']","[0.453, 0.453, 0.453]","","",""],[[["['Another Topic']","sounds\newsound.ogg","5.248","","","","","",""],[]],[["['Test2']","","","","","","","",""],[]],[["['Hello', 'This is a test', 'that will hopefully allow ACS', 'to show multiple prompts and sounds']","['sounds\newsound.ogg', 'sounds\newsound.ogg', 'sounds\newsound.ogg']","[0.5, 0.5, 4.248]","['This is another test', 'that I hope works', 'because I''ve worked hard']","['sounds\newsound.ogg', 'sounds\newsound.ogg', 'sounds\newsound.ogg']","[5.248, 5.248, 5.248]","","[]",""],[]]]]];
 [officer, OFFICER_CONVERSATION] call ACS_fnc_user_registerConversation;
 condition = 1;
 

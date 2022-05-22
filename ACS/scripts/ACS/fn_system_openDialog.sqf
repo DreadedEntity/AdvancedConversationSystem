@@ -22,7 +22,7 @@ createDialog "AdvancedConversationSystem";
 
 private _conversation = ACS_SPEAKER getVariable "ACS_CONVERSATION";
 if (isNil "_conversation") exitWith {};
-_data = (_conversation # 0) # 0;
+private _data = (_conversation # 0) # 0;
 diag_log format ["Data: %1", _data];
 
 _data call ACS_fnc_system_doTopic;

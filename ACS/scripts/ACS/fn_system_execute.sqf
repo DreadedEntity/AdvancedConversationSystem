@@ -16,12 +16,6 @@ _data = call compile ((uiNamespace getVariable "ACS_TOPICLISTBOX") lbData (_this
 	_data select 7 -- Code
 	_data select 8 -- Next Path
 	_data select 9 -- Condition
-	
-{
-	((findDisplay 69) displayCtrl _x) ctrlSetFade 0.75;
-	((findDisplay 69) displayCtrl _x) ctrlCommit 0.5;
-	ctrlEnable [_x, false]
-} forEach [1500, 1000, 1002];
 */
 
 /* This code is for an INTERRUPT system that I created. It's purpose is to skip to the next line of dialogue when the player presses spacebar,
@@ -91,5 +85,3 @@ if !((_data select 0) in _completed) then {
 */
 
 //hint str (player getVariable ["ACS_completedTopics", []]);
-
-//_next call ACS_fnc_system_addTopics;
