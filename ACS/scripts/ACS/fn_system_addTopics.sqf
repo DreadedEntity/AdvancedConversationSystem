@@ -14,28 +14,28 @@ if (isNil "_parent") then {
 	_children = ["NULL"];
 };
 
-_length = count _this;
-_childAmount = count _children;
+private _length = count _this;
+private _childAmount = count _children;
 
+private _lb = uiNamespace getVariable "ACS_TOPICLISTBOX";
 if (_childAmount > 0) then {
-	lbClear 1500;
-	lbSetCurSel [1500, -1];
+	lbClear _lb;
+	_lb lbSetCurSel -1;
 	{
-		_condition = (_x # 0) # 8;
+		private _condition = (_x # 0) # 8;
 		if ((_condition == "") || {call compile _condition}) then {
 			private _array = _this;
+			//diag_log format ["Array: %1", _this];
 			private _topicName = (call compile ((_x # 0) # 0)) # 0; //first select gets the entire topic array, second select gets topic array, third select gets the name
 			if (_topicName find "STR_" == 0) then {
 				_topicName = localize _topicName;
 			};
-			_index = lbAdd [1500, _topicName];
+			_index = _lb lbAdd _topicName;
 			_array set [_length, _forEachIndex];
-			lbSetData [1500, _index, str ([_array] + (_x # 0))];
-			//systemChat (lbData [1500, _index]);
-//			if (_array in (player getVariable ["ACS_completedTopics", []])) then
-//			{
-//			lbSetColor [1500, _index, GREY];
-//			};
+			_lb lbSetData [_index, str ([_array] + (_x # 0))];
+			if (_array in (ACS_SPEAKER getVariable ["ACS_COMPLETEDTOPICS", []])) then {
+				_lb lbSetColor [ _index, GREY];
+			};
 		};
 	} forEach _children; //select all children from main conversation
 };

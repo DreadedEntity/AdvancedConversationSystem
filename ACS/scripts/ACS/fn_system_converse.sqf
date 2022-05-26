@@ -5,7 +5,6 @@
 diag_log format ["fn_system_converse: %1", _this];
 
 params ["_offset",["_textArray", "", [""]],["_soundArray", "", [""]],["_soundLengthArray", "", [""]]];
-diag_log format ["Offset: %1", _offset];
 
 _textArray = [call compile _textArray, []] select (_textArray == ""); diag_log format ["TextArray: %1", _textArray];
 _soundArray = [call compile _soundArray, []] select (_soundArray == ""); diag_log format ["SoundArray: %1", _soundArray];
@@ -40,7 +39,9 @@ if (_count > 0) then {
 			diag_log format ["Sound: %1", _sound];
 			private _speaker = if (_offset) then { ACS_CALLER } else { ACS_SPEAKER };
 			private _soundSource = _speaker say3D _sound;
+			uiNamespace setVariable ["ACS_SOUNDSOURCE", _soundSource];
 			waitUntil {isNull _soundSource || ACS_INTERRUPT};
 		};
 	} forEach _lists;
+	"" call ACS_fnc_system_setDialogueTextbox;
 };

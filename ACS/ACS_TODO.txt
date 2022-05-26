@@ -3,7 +3,8 @@ ReadMe text file
 Created by: DreadedEntity
 ------------------------------------------------------------------
 
+Remove global variables from code (use uiNamespace?)
+Figure out how to work in multiplayer
 Add more useful user functions
-Get conditional topics working
 
 Remove debug printouts - Medium Priority

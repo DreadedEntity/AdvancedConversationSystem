@@ -16,6 +16,5 @@ class ACS {
 		class system_dimMainControls {};
 		class system_setNameTextbox {};
 		class system_setDialogueTextbox {};
-		class system_select2 {};
 	};
 };
