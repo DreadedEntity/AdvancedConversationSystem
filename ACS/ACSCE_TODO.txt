@@ -1,8 +1,0 @@
-------------------------------------------------------------------
-ReadMe text file
-Created by: DreadedEntity
-------------------------------------------------------------------
-
-Make sure topics are properly saved after editing
-Create Hotkey system
-Create Tutorial

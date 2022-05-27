@@ -1,6 +1,6 @@
 class ACS {
 	class Functions {
-		file = "ACS\scripts\ACS";
+		file = "ACS\scripts";
 		class user_enableTalk {};
 		class system_select {};
 		class system_openDialog {};

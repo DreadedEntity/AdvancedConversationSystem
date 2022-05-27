@@ -7,14 +7,14 @@
 
 author = DreadedEntity;
 
-#include "ACS\resources\BaseClasses.hpp"
+#include "resources\configs\BaseClasses.hpp"
 #include "ACS\resources\AdvancedConversationSystem.hpp"
-#include "ACS\resources\ACS_Editor.hpp"
+#include "ACSCE\resources\ACS_Editor.hpp"
 
 class CfgFunctions
 {
 	#include "ACS\resources\ACS_functions.txt"
-	#include "ACS\resources\ACSCE_functions.txt"
+	#include "ACSCE\resources\ACSCE_functions.txt"
 };
 
 class CfgSounds
@@ -25,18 +25,18 @@ class CfgSounds
 		// how the sound is referred to in the editor (e.g. trigger effects)
 		name = "DreadedEntity";
 		// filename, volume, pitch
-		sound[] = {"sounds\newsound.ogg", 1, 1};
+		sound[] = {"resources\sounds\newsound.ogg", 1, 1};
 		// subtitle delay in seconds, subtitle text 
 		titles[] = {};
 	};
-	SOUND(entry1, "sounds\entry1.ogg")
-	SOUND(entry2, "sounds\entry2.ogg")
-	SOUND(thisconvo1, "sounds\whatis1.ogg")
-	SOUND(thisconvo2, "sounds\whatis2.ogg")
-	SOUND(thisconvo3, "sounds\whatis3.ogg")
-	SOUND(whatisACS21, "sounds\whatisACS21.ogg")
-	SOUND(whatisACS22, "sounds\whatisACS22.ogg")
-	SOUND(whyACS1, "sounds\whyACS1.ogg")
-	SOUND(whyACS2, "sounds\whyACS2.ogg")
-	SOUND(whyACS3, "sounds\whyACS3.ogg")
+	SOUND(entry1, "resources\sounds\entry1.ogg")
+	SOUND(entry2, "resources\sounds\entry2.ogg")
+	SOUND(thisconvo1, "resources\sounds\whatis1.ogg")
+	SOUND(thisconvo2, "resources\sounds\whatis2.ogg")
+	SOUND(thisconvo3, "resources\sounds\whatis3.ogg")
+	SOUND(whatisACS21, "resources\sounds\whatisACS21.ogg")
+	SOUND(whatisACS22, "resources\sounds\whatisACS22.ogg")
+	SOUND(whyACS1, "resources\sounds\whyACS1.ogg")
+	SOUND(whyACS2, "resources\sounds\whyACS2.ogg")
+	SOUND(whyACS3, "resources\sounds\whyACS3.ogg")
 };
