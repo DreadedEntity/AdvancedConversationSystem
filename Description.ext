@@ -29,20 +29,11 @@ class CfgSounds
 		// subtitle delay in seconds, subtitle text 
 		titles[] = {};
 	};
-	//SOUND(helloENG, "sounds\helloENG.ogg")
-	//SOUND(helloGER, "sounds\helloGER.ogg")
-	//SOUND(hey, "sounds\hey.ogg")
-	//SOUND(song1, "sounds\space_battle.ogg")
-	//SOUND(player1, "sounds\player1.ogg")
-	//SOUND(man1, "sounds\man1.ogg")
-	//SOUND(man2, "sounds\man2.ogg")
-	//SOUND(man3, "sounds\man3.ogg")
-	//SOUND(man4, "sounds\man4.ogg")
 	SOUND(entry1, "sounds\entry1.ogg")
 	SOUND(entry2, "sounds\entry2.ogg")
-	SOUND(whatis1, "sounds\whatis1.ogg")
-	SOUND(whatis2, "sounds\whatis2.ogg")
-	SOUND(whatis3, "sounds\whatis3.ogg")
+	SOUND(thisconvo1, "sounds\whatis1.ogg")
+	SOUND(thisconvo2, "sounds\whatis2.ogg")
+	SOUND(thisconvo3, "sounds\whatis3.ogg")
 	SOUND(whatisACS21, "sounds\whatisACS21.ogg")
 	SOUND(whatisACS22, "sounds\whatisACS22.ogg")
 	SOUND(whyACS1, "sounds\whyACS1.ogg")

@@ -3,7 +3,6 @@ ReadMe text file
 Created by: DreadedEntity
 ------------------------------------------------------------------
 
-make edits to data points (add topic name, remove sound names, sound lengths)
 Make sure topics are properly saved after editing
 Create Hotkey system
 Create Tutorial

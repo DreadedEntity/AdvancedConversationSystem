@@ -4,7 +4,7 @@
 /////////////////////////////////////
 diag_log format ["fn_system_openDialog: %1", _this];
 
-ACS_MISSION_PATH = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;
+//ACS_MISSION_PATH = [(str missionConfigFile), 0, -15] call BIS_fnc_trimString;
 
 disableSerialization;
 params ["_speaker", "_caller"];
@@ -22,7 +22,9 @@ createDialog "AdvancedConversationSystem";
 
 private _conversation = ACS_SPEAKER getVariable "ACS_CONVERSATION";
 if (isNil "_conversation") exitWith {};
-private _data = (_conversation # 0) # 0;
+private _data = [[]];
+_data append ((_conversation # 0) # 0);
+
 diag_log format ["Data: %1", _data];
 
 _data call ACS_fnc_system_doTopic;

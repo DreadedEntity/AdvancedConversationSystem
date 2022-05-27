@@ -10,9 +10,9 @@ false call ACSCE_fnc_showRightMouseMenu;
 switch (_this) do {
 	case 0: {
 		true call ACSCE_fnc_showEditControls;
-		for "_i" from 1400 to 1408 do {
-			ctrlSetText [_i, ""];
-		};
+		{
+			_x ctrlSetText "";
+		} forEach (uiNamespace getVariable "ACSCE_EDITMENU");
 		uiNamespace setVariable ["ACSCE_STATE", NEW];
 	};
 	case 1: {
@@ -21,10 +21,9 @@ switch (_this) do {
 			
 			ctrlSetText [1400, tvText [1500, tvCurSel 1500]];
 			_data = call compile (tvData [1500, tvCurSel 1500]);
-			_count = (count _data) - 1;
-			for "_i" from 0 to _count do {
-				ctrlSetText [1400 + _i, _data # _i];
-			};
+			{
+				ctrlSetText [_x, _data # _forEachIndex];
+			} forEach [1401,1402,1400,1403,1406,1407,1408];
 			uiNamespace setVariable ["ACSCE_STATE", EDIT];
 		} else {
 			true call ACSCE_fnc_dimMainControls;

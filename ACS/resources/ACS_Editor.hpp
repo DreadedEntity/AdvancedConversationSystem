@@ -1,6 +1,6 @@
 #define ACSCE_TITLE        1400
-#define ACSCE_TITLE_SOUND  1401
-#define ACSCE_TITLE_LENGTH 1402
+#define ACSCE_TOPIC        1401
+#define ACSCE_MENU_NAME    1402
 #define ACSCE_BODY         1403
 #define ACSCE_SOUND        1404
 #define ACSCE_BODY_LENGTH  1405
@@ -174,7 +174,7 @@ class ACS_Editor {
 			idc = 1001;
 			text = "Title:"; //--- ToDo: Localize;
 			x = 0.237567 * safezoneW + safezoneX;
-			y = 0.192 * safezoneH + safezoneY;
+			y = 0.248 * safezoneH + safezoneY;
 			w = 0.0852906 * safezoneW;
 			h = 0.028 * safezoneH;
 			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
@@ -183,44 +183,44 @@ class ACS_Editor {
 			text = "ACSCE_TITLE_EDIT";
 			idc = ACSCE_TITLE;
 			x = 0.322858 * safezoneW + safezoneX;
-			y = 0.192 * safezoneH + safezoneY;
+			y = 0.248 * safezoneH + safezoneY;
 			w = 0.439575 * safezoneW;
 			h = 0.028 * safezoneH;
 			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
 		};
 		class RscText_1002: ACSTitle {
 			idc = 1002;
-			text = "Title Sound:"; //--- ToDo: Localize;
+			text = "Topic Name:"; //--- ToDo: Localize;
+			x = 0.237567 * safezoneW + safezoneX;
+			y = 0.192 * safezoneH + safezoneY;
+			w = 0.0852906 * safezoneW;
+			h = 0.028 * safezoneH;
+			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+		};
+		class RscEdit_1401: ACSEdit {
+			text = "ACSCE_TOPIC_EDIT";
+			idc = ACSCE_TOPIC;
+			x = 0.322858 * safezoneW + safezoneX;
+			y = 0.192 * safezoneH + safezoneY;
+			w = 0.439575 * safezoneW;
+			h = 0.028 * safezoneH;
+			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+		};
+		class RscText_1003: ACSTitle {
+			idc = 1003;
+			text = "Menu Name:"; //--- ToDo: Localize;
 			x = 0.237567 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.0852906 * safezoneW;
 			h = 0.028 * safezoneH;
 			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
 		};
-		class RscEdit_1401: ACSEdit {
-			text = "ACSCE_TITLE_SOUND_EDIT";
-			idc = ACSCE_TITLE_SOUND;
-			x = 0.322858 * safezoneW + safezoneX;
-			y = 0.22 * safezoneH + safezoneY;
-			w = 0.177142 * safezoneW;
-			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
-		};
-		class RscText_1003: ACSTitle {
-			idc = 1003;
-			text = "Sound Length:"; //--- ToDo: Localize;
-			x = 0.5 * safezoneW + safezoneX;
-			y = 0.22 * safezoneH + safezoneY;
-			w = 0.0984123 * safezoneW;
-			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
-		};
 		class RscEdit_1402: ACSEdit {
 			text = "ACSCE_TITLE_LENGTH_EDIT";
-			idc = ACSCE_TITLE_LENGTH;
-			x = 0.598412 * safezoneW + safezoneX;
+			idc = ACSCE_MENU_NAME;
+			x = 0.322858 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
-			w = 0.16402 * safezoneW;
+			w = 0.439575 * safezoneW;
 			h = 0.028 * safezoneH;
 			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
 		};
@@ -228,7 +228,7 @@ class ACS_Editor {
 			idc = 1004;
 			text = "Body:"; //--- ToDo: Localize;
 			x = 0.237567 * safezoneW + safezoneX;
-			y = 0.248 * safezoneH + safezoneY;
+			y = 0.276 * safezoneH + safezoneY;
 			w = 0.0852906 * safezoneW;
 			h = 0.028 * safezoneH;
 			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
@@ -237,48 +237,48 @@ class ACS_Editor {
 			text = "ACSCE_BODY_EDIT";
 			idc = ACSCE_BODY;
 			x = 0.322858 * safezoneW + safezoneX;
-			y = 0.247007 * safezoneH + safezoneY;
+			y = 0.276 * safezoneH + safezoneY;
 			w = 0.439575 * safezoneW;
 			h = 0.154 * safezoneH;
 			style = ST_MULTI;
 			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
 		};
-		class RscText_1005: ACSTitle {
-			idc = 1005;
-			text = "Body Sound:"; //--- ToDo: Localize;
-			x = 0.237567 * safezoneW + safezoneX;
-			y = 0.402 * safezoneH + safezoneY;
-			w = 0.0852906 * safezoneW;
-			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
-		};
-		class RscEdit_1404: ACSEdit {
-			text = "ACSCE_SOUND_EDIT";
-			idc = ACSCE_SOUND;
-			x = 0.322858 * safezoneW + safezoneX;
-			y = 0.402 * safezoneH + safezoneY;
-			w = 0.177142 * safezoneW;
-			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
-		};
-		class RscText_1006: ACSTitle {
-			idc = 1006;
-			text = "Body Length:"; //--- ToDo: Localize;
-			x = 0.5 * safezoneW + safezoneX;
-			y = 0.402 * safezoneH + safezoneY;
-			w = 0.0852906 * safezoneW;
-			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
-		};
-		class RscEdit_1405: ACSEdit {
-			text = "ACSCE_BODY_LENGTH_EDIT";
-			idc = ACSCE_BODY_LENGTH;
-			x = 0.585291 * safezoneW + safezoneX;
-			y = 0.402 * safezoneH + safezoneY;
-			w = 0.177142 * safezoneW;
-			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
-		};
+		//class RscText_1005: ACSTitle {
+		//	idc = 1005;
+		//	text = "Body Sound:"; //--- ToDo: Localize;
+		//	x = 0.237567 * safezoneW + safezoneX;
+		//	y = 0.402 * safezoneH + safezoneY;
+		//	w = 0.0852906 * safezoneW;
+		//	h = 0.028 * safezoneH;
+		//	onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+		//};
+		//class RscEdit_1404: ACSEdit {
+		//	text = "ACSCE_SOUND_EDIT";
+		//	idc = ACSCE_SOUND;
+		//	x = 0.322858 * safezoneW + safezoneX;
+		//	y = 0.402 * safezoneH + safezoneY;
+		//	w = 0.177142 * safezoneW;
+		//	h = 0.028 * safezoneH;
+		//	onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+		//};
+		//class RscText_1006: ACSTitle {
+		//	idc = 1006;
+		//	text = "Body Length:"; //--- ToDo: Localize;
+		//	x = 0.5 * safezoneW + safezoneX;
+		//	y = 0.402 * safezoneH + safezoneY;
+		//	w = 0.0852906 * safezoneW;
+		//	h = 0.028 * safezoneH;
+		//	onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+		//};
+		//class RscEdit_1405: ACSEdit {
+		//	text = "ACSCE_BODY_LENGTH_EDIT";
+		//	idc = ACSCE_BODY_LENGTH;
+		//	x = 0.585291 * safezoneW + safezoneX;
+		//	y = 0.402 * safezoneH + safezoneY;
+		//	w = 0.177142 * safezoneW;
+		//	h = 0.028 * safezoneH;
+		//	onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+		//};
 		class RscText_1007: ACSTitle {
 			idc = 1007;
 			text = "Code:"; //--- ToDo: Localize;

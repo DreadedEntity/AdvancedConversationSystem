@@ -4,7 +4,7 @@
 /////////////////////////////////////
 diag_log format ["fn_system_doTopic: %1", _this];
 
-params ["_titleTexts", "_titleSounds", "_titleSoundLengths", "_bodyTexts", "_bodySounds", "_bodySoundLengths"];
+params ["_path","_topic","_menu","_titles","_bodys","_code","_nextPath","_condition"];
 
 true call ACS_fnc_system_dimMainControls;
 
@@ -26,9 +26,9 @@ private _keyUp = _ACS displayAddEventHandler ["KeyUp", {
 	}
 }];
 
-[true, _titleTexts, _titleSounds, _titleSoundLengths] call ACS_fnc_system_converse;
+[true, _topic, _titles] call ACS_fnc_system_converse;
 sleep 0.5;
-[false, _bodyTexts, _bodySounds, _bodySoundLengths] call ACS_fnc_system_converse;
+[false, _topic, _bodys] call ACS_fnc_system_converse;
 
 {
 	_ACS displayRemoveEventHandler _x;

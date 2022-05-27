@@ -10,7 +10,8 @@ switch (uiNamespace getVariable ["ACSCE_STATE", 0]) do {
 		call ACSCE_fnc_addTopic;
 	};
 	case 1: {
-		tvSetData [1500, tvCurSel 1500, str [ctrlText 1400, ctrlText 1401, ctrlText 1402, ctrlText 1403, ctrlText 1404, ctrlText 1405, ctrlText 1406, ctrlText 1407, ctrlText 1408]];
+		tvSetText [1500, tvCurSel 1500, ctrlText 1401];
+		tvSetData [1500, tvCurSel 1500, str [ctrlText 1401, ctrlText 1402, ctrlText 1400, ctrlText 1403, ctrlText 1406, ctrlText 1407, ctrlText 1408]];
 	};
 	default {};
 };
