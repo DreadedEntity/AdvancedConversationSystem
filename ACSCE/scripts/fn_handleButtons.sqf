@@ -12,7 +12,7 @@ switch (_this) do {
 		true call ACSCE_fnc_showEditControls;
 		{
 			_x ctrlSetText "";
-		} forEach (uiNamespace getVariable "ACSCE_EDITMENU");
+		} forEach (uiNamespace getVariable "ACSCE_EDITTEXTBOXES");
 		uiNamespace setVariable ["ACSCE_STATE", NEW];
 	};
 	case 1: {

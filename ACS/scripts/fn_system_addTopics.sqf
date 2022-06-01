@@ -6,7 +6,8 @@ diag_log format ["fn_system_addTopics: %1", _this];
 
 #define GREY [1,1,1,0.5]
 
-private _conversation = ACS_SPEAKER getVariable "ACS_CONVERSATION";
+private _speaker = uiNamespace getVariable "ACS_SPEAKER";
+private _conversation = _speaker getVariable "ACS_CONVERSATION";
 private _parent = [(_conversation # 0), _this] call ACS_fnc_system_select;
 diag_log format ["Parent: %1", _parent];
 private _children = _parent # 1;
@@ -36,8 +37,8 @@ if (_childAmount > 0) then {
 			_index = _lb lbAdd _topicName;
 			_array set [_length, _forEachIndex];
 			_lb lbSetData [_index, str ([_array] + (_x # 0))];
-			if (_array in (ACS_SPEAKER getVariable ["ACS_COMPLETEDTOPICS", []])) then {
-				_lb lbSetColor [ _index, GREY];
+			if (_array in (_speaker getVariable ["ACS_COMPLETEDTOPICS", []])) then {
+				_lb lbSetColor [_index, GREY];
 			};
 		};
 	} forEach _children; //select all children from main conversation

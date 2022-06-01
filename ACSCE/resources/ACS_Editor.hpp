@@ -56,7 +56,7 @@ class ACS_Editor {
 			onTreeSelChanged = "if (ctrlShown ((findDisplay 12345) displayCtrl 1001)) then {ctrlSetText [1400, tvText [1500, tvCurSel 1500]];ctrlSetText [1401, tvData [1500, tvCurSel 1500]];}; systemChat str (tvData [1500, tvCurSel 1500]);ACSCE_MENU_CLICKED = false;";
 			//onTreeDblClick = "systemChat str (tvValue [1500, _this select 1]);";
 			onMouseButtonDown = "_this call ACSCE_fnc_handleMouseClick; call ACSCE_fnc_closeMenu;";
-			onLoad = "[_this # 0, 'ACSCE_MAINCONTROLS'] call ACSCE_fnc_addToControlGroup";
+			onLoad = "[_this # 0, 'ACSCE_MAINCONTROLS'] call ACSCE_fnc_addToControlGroup; uiNamespace setVariable ['ACSCE_MAINTREE', _this # 0]";
 		};
 		class RscButton_1600: ACSText {
 			idc = 1600;
@@ -186,7 +186,7 @@ class ACS_Editor {
 			y = 0.248 * safezoneH + safezoneY;
 			w = 0.439575 * safezoneW;
 			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup; [_this # 0, 'ACSCE_EDITTEXTBOXES'] call ACSCE_fnc_addToControlGroup";
 		};
 		class RscText_1002: ACSTitle {
 			idc = 1002;
@@ -204,7 +204,7 @@ class ACS_Editor {
 			y = 0.192 * safezoneH + safezoneY;
 			w = 0.439575 * safezoneW;
 			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup; [_this # 0, 'ACSCE_EDITTEXTBOXES'] call ACSCE_fnc_addToControlGroup";
 		};
 		class RscText_1003: ACSTitle {
 			idc = 1003;
@@ -222,7 +222,7 @@ class ACS_Editor {
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.439575 * safezoneW;
 			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup; [_this # 0, 'ACSCE_EDITTEXTBOXES'] call ACSCE_fnc_addToControlGroup";
 		};
 		class RscText_1004: ACSTitle {
 			idc = 1004;
@@ -241,7 +241,7 @@ class ACS_Editor {
 			w = 0.439575 * safezoneW;
 			h = 0.154 * safezoneH;
 			style = ST_MULTI;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup; [_this # 0, 'ACSCE_EDITTEXTBOXES'] call ACSCE_fnc_addToControlGroup";
 		};
 		//class RscText_1005: ACSTitle {
 		//	idc = 1005;
@@ -296,7 +296,7 @@ class ACS_Editor {
 			w = 0.439575 * safezoneW;
 			h = 0.056 * safezoneH;
 			style = ST_MULTI;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup; [_this # 0, 'ACSCE_EDITTEXTBOXES'] call ACSCE_fnc_addToControlGroup";
 		};
 		class RscText_1008: ACSTitle {
 			idc = 1008;
@@ -314,7 +314,7 @@ class ACS_Editor {
 			y = 0.486 * safezoneH + safezoneY;
 			w = 0.439575 * safezoneW;
 			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup; [_this # 0, 'ACSCE_EDITTEXTBOXES'] call ACSCE_fnc_addToControlGroup";
 		};
 		class RscText_1009: ACSTitle {
 			idc = 1009;
@@ -332,7 +332,7 @@ class ACS_Editor {
 			y = 0.514 * safezoneH + safezoneY;
 			w = 0.439575 * safezoneW;
 			h = 0.028 * safezoneH;
-			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup";
+			onLoad = "[_this # 0, 'ACSCE_EDITMENU'] call ACSCE_fnc_addToControlGroup; [_this # 0, 'ACSCE_EDITTEXTBOXES'] call ACSCE_fnc_addToControlGroup";
 		};
 		class RscButton_1603: ACSButton {
 			idc = 1603;

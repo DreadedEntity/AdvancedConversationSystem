@@ -8,19 +8,18 @@ diag_log format ["fn_system_openDialog: %1", _this];
 
 disableSerialization;
 params ["_speaker", "_caller"];
-ACS_SPEAKER = (_this select 0);
-ACS_CALLER = (_this select 1);
-ACS_INTERRUPT = false;
-ACS_INTERRUPT_HELD = false;
-soundPlaying = false;
+_speaker = (_this select 0);
+uiNamespace setVariable ["ACS_SPEAKER", _speaker];
+_caller = (_this select 1);
+uiNamespace setVariable ["ACS_CALLED", _caller];
 
 createDialog "AdvancedConversationSystem";
-(name ACS_SPEAKER) call ACS_fnc_system_setNameTextbox;
+(name _speaker) call ACS_fnc_system_setNameTextbox;
 "" call ACS_fnc_system_setDialogueTextbox;
 
 [] call ACS_fnc_system_addTopics;
 
-private _conversation = ACS_SPEAKER getVariable "ACS_CONVERSATION";
+private _conversation = _speaker getVariable "ACS_CONVERSATION";
 if (isNil "_conversation") exitWith {};
 private _data = [[]];
 _data append ((_conversation # 0) # 0);

@@ -2,6 +2,7 @@
 // Function file for Armed Assault //
 //    Created by: DreadedEntity    //
 /////////////////////////////////////
+diag_log format ["fn_handleAccept: %1", _this];
 
 true call ACSCE_fnc_showEditControls;
 

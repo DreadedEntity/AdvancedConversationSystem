@@ -11,14 +11,12 @@ author = DreadedEntity;
 #include "ACS\resources\AdvancedConversationSystem.hpp"
 #include "ACSCE\resources\ACS_Editor.hpp"
 
-class CfgFunctions
-{
+class CfgFunctions {
 	#include "ACS\resources\ACS_functions.txt"
 	#include "ACSCE\resources\ACSCE_functions.txt"
 };
 
-class CfgSounds
-{
+class CfgSounds {
 	sounds[] = {};
 	class DreadedEntity
 	{
@@ -39,4 +37,18 @@ class CfgSounds
 	SOUND(whyACS1, "resources\sounds\whyACS1.ogg")
 	SOUND(whyACS2, "resources\sounds\whyACS2.ogg")
 	SOUND(whyACS3, "resources\sounds\whyACS3.ogg")
+	SOUND(features1, "resources\sounds\features1.ogg")
+	SOUND(features2, "resources\sounds\features2.ogg")
+	SOUND(branching1, "resources\sounds\branching1.ogg")
+	SOUND(branching2, "resources\sounds\branching2.ogg")
+	SOUND(editor1, "resources\sounds\editor1.ogg")
+	SOUND(editor2, "resources\sounds\editor2.ogg")
+	SOUND(code1, "resources\sounds\code1.ogg")
+	SOUND(code2, "resources\sounds\code2.ogg")
+	SOUND(interrupts1, "resources\sounds\interrupts1.ogg")
+	SOUND(interrupts2, "resources\sounds\interrupts2.ogg")
+	SOUND(lip1, "resources\sounds\lip1.ogg")
+	SOUND(lip2, "resources\sounds\lip2.ogg")
+	SOUND(back1, "resources\sounds\back1.ogg")
+	SOUND(back2, "resources\sounds\back2.ogg")
 };
